@@ -1,0 +1,56 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        //Vanilla
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "LogName": "Paved Valley: Railroad",
+            "FromFile": "Maps/Railroad/Railroad.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+            }
+        },
+
+        //SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "LogName": "Paved Valley: Railroad",
+            "FromFile": "Maps/Railroad/SVE_Railroad.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "MapTiles": [
+                {
+                    "Position": { "X": 31, "Y": 54 },
+                    "Layer": "Back20",
+                    "Remove": true
+                }
+            ],
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "MapTiles": [
+                {
+                    "Position": { "X": 31, "Y": 55 },
+                    "Layer": "Back20",
+                    "Remove": true
+                }
+            ],
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+            }
+        },
+    ]
+}

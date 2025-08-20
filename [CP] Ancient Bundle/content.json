@@ -1,0 +1,110 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.7.0",
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "{{ModId}}_AncientBundle",
+      "FromFile": "AncientBundle.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "{{ModId}}_AncientFruitWine",
+      "FromFile": "AncientFruitWine.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "{{ModId}}_AncientFruitJelly",
+      "FromFile": "AncientFruitJelly.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "{{ModId}}_DriedAncientFruit",
+      "FromFile": "DriedAncientFruit.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "{{ModId}}_AncientFruit",
+      "FromFile": "AncientFruit.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_AncientBundle": {
+          "Name": "{{ModId}}_AncientBundle",
+          "Displayname": "Ancient Bundle",
+          "Description": "Bundle of Ancient Goodies",
+          "Type": "Artisan Goods",
+          "Catagory": -26,
+          "Price": 25000,
+          "Texture": "{{ModId}}_AncientBundle",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Universal_Love"],
+          "Value": "{{ModId}}_AncientBundle",
+          "Delimiter": " "
+        }
+      ]
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "{{ModId}}_AncientBundle": "454 10 344 2 348 2 DriedFruit 2/AV_Craftable/{{ModId}}_AncientBundle/Farming 10"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+      "Entries": {
+        "{{ModId}}_AncientBundle": {
+          "ProductQualifiedId": "(O)AtlasV.AncientBundle_AncientBundle",
+          "ProductAmount": 1,
+          "Ingredients":[ 
+            {
+            "Type": "Item",
+            "Value": "(O)454",
+            "Amount": 10,
+            },
+            {
+            "Type": "ContextTag",
+            "Value": "id_(o)344,preserve_sheet_index_454",
+            "ContextTagsRequireAll": true,
+            "Amount": 2,
+            "OverrideText": "Ancient Fruit Jelly",
+            "OverrideTexturePath": "{{ModId}}_AncientFruitJelly",
+            "OverrideTextureRect": {"X": 0, "Y": 0, "Width": 16, "Height": 16},
+            },
+            {
+            "Type": "ContextTag",
+            "Value": "id_(o)348,quality_iridium,preserve_sheet_index_454",
+            "ContextTagsRequireAll": true,
+            "Amount": 2,
+            "OverrideText": "Irdidium Quality Ancient Fruit Wine",
+            "OverrideTexturePath": "{{ModId}}_AncientFruitWine",
+            "OverrideTextureRect": {"X": 0, "Y": 0, "Width": 16, "Height": 16},
+            },
+            {
+            "Type": "ContextTag",
+            "Value": "id_(o)driedfruit,preserve_sheet_index_454",
+            "ContextTagsRequireAll": true,
+            "Amount": 2,
+            "OverrideText": "Dried Ancient Fruit",
+            "OverrideTexturePath": "{{ModId}}_DriedAncientFruit",
+            "OverrideTextureRect": {"X": 0, "Y": 0, "Width": 16, "Height": 16},
+            }
+          ]
+        }
+      }
+    },
+  ]
+}

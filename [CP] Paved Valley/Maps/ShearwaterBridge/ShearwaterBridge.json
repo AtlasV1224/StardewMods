@@ -1,0 +1,17 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // {
+        //     "Action": "EditMap",
+        //     "Target": "Maps/Custom_ShearwaterBridge",
+        //     "LogName": "Paved Valley: ShearwaterBridge",
+        //     "FromFile": "Maps/ShearwaterBridge/ShearwaterBridge.tmx",
+        //     //"FromArea": { "X": 22, "Y": 61, "Width": 16, "Height": 13 },
+        //     //"ToArea": { "X": 22, "Y": 61, "Width": 16, "Height": 13 }
+        //     "PatchMode": "Overlay",
+        //     "When": {
+        //         "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        //     }
+        // },
+    ]
+}

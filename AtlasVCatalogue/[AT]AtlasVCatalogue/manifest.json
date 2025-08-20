@@ -1,0 +1,19 @@
+{
+  "Name": "[AT] Atlas Catalogue",
+  "Author": "AtlasV",
+  "Version": "1.0.1",
+  "Description": "Alternative textures for the Atlas Catalogue",
+  "UniqueID": "AtlasV.ATAtlasCatalogue",
+  "UpdateKeys": ["Nexus:35658"],
+  "Dependencies": [
+   {
+      "UniqueID": "AtlasV.AtlasCatalogue",
+      "MinimumVersion": "1.0.0",
+      "IsRequired": true
+   }
+  ],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "7.2.4"
+  }
+}

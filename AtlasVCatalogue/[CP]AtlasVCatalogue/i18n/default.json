@@ -1,0 +1,6 @@
+{
+  "$schema": "https://smapi.io/schemas/i18n.json",
+  //Catalogue
+  "Catalogue.DisplayName": "The Atlas Collection Catalogue",
+  "Catalogue.Description": "The Official Catalogue for the Atlas Collection",
+}

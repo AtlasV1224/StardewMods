@@ -1,0 +1,12 @@
+{
+  "Name": "[CP] Auto-Sorter Building",
+  "Author": "AtlasV",
+  "Version": "1.1.2",
+  "Description": "The Content Patcher component of the Auto-Sorter Building",
+  "UniqueID": "AtlasV.AutoSorterBuilding",
+  "MinimumApiVersion": "4.2.0",
+  "UpdateKeys": ["Nexus:36568"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

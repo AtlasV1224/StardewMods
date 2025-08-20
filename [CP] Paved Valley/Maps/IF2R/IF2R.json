@@ -1,0 +1,12 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Farm",
+            "LogName": "Paved Valley: IF2R",
+            "FromFile": "Maps/IF2R/IF2R.tmx",
+            "PatchMode": "Overlay",
+        },
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "[CP] Nutrient Slop",
+  "Author": "AtlasV",
+  "Version": "0.0.1",
+  "Description": "A mod that adds slop, that's pretty much it",
+  "UniqueID": "AtlasV.NutrientSlop",
+  "MinimumApiVersion": "4.2.0",
+  "UpdateKeys": ["Nexus:???"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

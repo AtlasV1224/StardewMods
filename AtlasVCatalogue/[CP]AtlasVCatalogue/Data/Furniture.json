@@ -1,0 +1,18 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Furniture Sprite",
+            "Action": "Load",
+            "Target": "{{ModId}}/CatalogueSprite",
+            "FromFile": "Assets/CatalogueSprite.png"
+        },
+        {
+            "LogName": "Add Catalogue", 
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "AtlasV.AtlasCatalogue": "AtlasV.AtlasCatalogue/other/2 3/2 1/1/15000/2/{{i18n:Catalogue.DisplayName}}/0/{{ModId}}\\CatalogueSprite/true"
+            }
+        }
+    ]
+}

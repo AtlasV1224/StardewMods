@@ -1,0 +1,49 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_{{PathNameItem}}": {
+          "Name": "{{ModId}}_{{PathNameItem}}",
+          "DisplayName": "{{i18n:{{PathNameItem}}.DisplayName}}",
+          "Description": "{{i18n:{{PathNameItem}}.Description}}",
+          "Type": "Crafting",
+          "Category": -24,
+          "Price": 1,
+          "Texture": "{{ModId}}/floorSprite",
+          "SpriteIndex": "{{SpriteIndex}}",
+        },
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/FloorsAndPaths",
+      "Entries": {
+        "{{ModId}}_{{PathName}}": {
+          "Id": "{{ModId}}_{{PathName}}",
+          "ItemId": "{{ModId}}_{{PathNameItem}}",
+          "Texture": "{{ModId}}/floor",
+          "Corner": {
+            "X": "{{TopLeftX}}",
+            "Y": "{{TopLeftY}}"
+          },
+          "WinterTexture": "{{ModId}}/floor",
+          "WinterCorner": {
+            "X": "{{WinterTopLeftX}}",
+            "Y": "{{WinterTopLeftY}}"
+          },
+          "PlacementSound": "stoneStep",
+          "RemovalSound": "hammer",
+          "RemovalDebrisType": 14,
+          "FootstepSound": "stoneStep",
+          "ConnectType": "{{ConnectType}}",
+          "ShadowType": "None",
+          "CornerSize": "{{CornerSize}}",
+          "FarmSpeedBuff": -1.0
+        }
+      }
+    }
+  ]
+}

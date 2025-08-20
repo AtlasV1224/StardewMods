@@ -1,0 +1,64 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.7.0",
+  "ConfigSchema": {
+    "Recolour": {
+      "AllowValues": "AutoDetect, Vanilla, Earthy, Wittily, StarBlue, BlueGrass, ReStarFoli",
+      "Default": "AutoDetect",
+      "Section": "Appearance"
+    },
+    "IF2R": {
+      "AllowValues": "true, false",
+      "Default": "False",
+      "Section": "Maps"
+    },
+  },
+  "Changes": [
+
+    //Include Texture Loading (To prevent content.json crowding)
+    {
+      "Action": "Include",
+      "FromFile": "TextureLoading.json"
+    },
+
+    //Include Maps
+    {
+      "Action": "Include",
+      "FromFile": "Maps/BusStop/BusStop.json"
+    },
+    { 
+      "Action": "Include",
+      "FromFile": "Maps/Town/Town.json"
+    },
+    { 
+      "Action": "Include",
+      "FromFile": "Maps/Forest/Forest.json"
+    },
+    { 
+      "Action": "Include",
+      "FromFile": "Maps/Mountain/Mountain.json"
+    },
+    { 
+      "Action": "Include",
+      "FromFile": "Maps/BlueMoonVineyard/BlueMoonVineyard.json",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    //{ 
+    //  "Action": "Include",
+    //  "FromFile": "Maps/ShearwaterBridge/ShearwaterBridge.json"
+    //},
+    { 
+      "Action": "Include",
+      "FromFile": "Maps/Railroad/Railroad.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Maps/IF2R/IF2R.json",
+      "When": {
+        "IF2R": true
+      }
+    }
+  ]
+}

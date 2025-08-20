@@ -1,0 +1,34 @@
+{
+  "Name": "[CP] Paved Valley",
+  "Author": "AtlasV",
+  "Version": "1.3.0",
+  "Description": "A mod that paves the valley like a functional town should be",
+  "UniqueID": "AtlasV.PavedValley",
+  "MinimumApiVersion": "4.2.0",
+  "UpdateKeys": ["Nexus:36297"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "FlashShifter.SVECode",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Rafseazz.RidgesideVillage",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "SunberryTeam.SBVSMAPI",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "tottlesfarm.fleurine",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.AlternativBusStop",
+      "IsRequired": false
+    },
+  ]
+}

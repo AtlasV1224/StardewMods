@@ -1,0 +1,218 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "LogName": "Paved Valley: Town",
+            "FromFile": "Maps/Town/Town.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles": [
+                {
+                    "Position": { "X": 41, "Y": 94 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 42, "Y": 94 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 21, "Y": 33 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+            ]
+        },
+
+        //SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "LogName": "Paved Valley: SVE_Town",
+            "FromFile": "Maps/Town/SVE_Town.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles": [
+                {
+                    "Position": { "X": 21, "Y": 33 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 22, "Y": 33 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 27, "Y": 33 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 28, "Y": 33 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 29, "Y": 33 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 110, "Y": 73 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 81, "Y": 22 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 88, "Y": 79 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 89, "Y": 79 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 67, "Y": 96 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 68, "Y": 96 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 41, "Y": 94 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 42, "Y": 94 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+
+        //SBV
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "LogName": "Paved Valley: SBV_Town",
+            "FromFile": "Maps/Town/SBV_Town.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod": "SunberryTeam.SBVSMAPI"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles": [
+                {
+                    "Position": { "X": 87, "Y": 96 },
+                    "Layer": "Back20",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 88, "Y": 99 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod": "SunberryTeam.SBVSMAPI"
+            }
+        },
+
+        //Compat
+
+        //SBV and SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "LogName": "Paved Valley: SBV_SVE_Compat",
+            "FromFile": "Maps/Town/SBV_SVE_Compat.tmx",
+            "PatchMode": "Overlay",
+            "MapTiles": [
+                {
+                    "Position": { "X": 88, "Y": 104 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 89, "Y": 104 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 88, "Y": 105 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 88, "Y": 106 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod": "SunberryTeam.SBVSMAPI, FlashShifter.StardewValleyExpandedCP",
+            }
+        },
+        // {
+        //     "Action": "EditMap",
+        //     "Target": "Maps/Town",
+        //     "MapTiles": [
+        //         {
+        //             "Position": { "X": 88, "Y": 104 },
+        //             "Layer": "Buildings",
+        //             "Remove": true
+        //         },
+        //         {
+        //             "Position": { "X": 89, "Y": 104 },
+        //             "Layer": "Buildings",
+        //             "Remove": true
+        //         },
+        //         {
+        //             "Position": { "X": 88, "Y": 105 },
+        //             "Layer": "Buildings",
+        //             "Remove": true
+        //         },
+        //         {
+        //             "Position": { "X": 88, "Y": 106 },
+        //             "Layer": "Buildings",
+        //             "Remove": true
+        //         },
+        //     ],
+        //     "When": {
+        //         "HasMod": "SunberryTeam.SBVSMAPI, FlashShifter.StardewValleyExpandedCP",
+        //     }
+        // },
+    ]
+}

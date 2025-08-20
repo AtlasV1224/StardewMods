@@ -1,0 +1,16 @@
+{
+  "FarmX": "48",
+  "FarmY": "7",
+  "BeachX": "20",
+  "BeachY": "4",
+  "MountainX": "31",
+  "MountainY": "20",
+  "DesertX": "35",
+  "DesertY": "45",
+  "IslandX": "11",
+  "IslandY": "11",
+  "TownX": "29",
+  "TownY": "67",
+  "TeleportBuildingX": "23",
+  "TeleportBuildingY": "18"
+}

@@ -1,0 +1,15 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_BlueMoonVineyard",
+            "LogName": "Paved Valley: BlueMoonVineyard",
+            "FromFile": "Maps/BlueMoonVineyard/BlueMoonVineyard.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+    ]
+}

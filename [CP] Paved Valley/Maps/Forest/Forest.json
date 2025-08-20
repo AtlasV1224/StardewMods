@@ -1,0 +1,90 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "LogName": "Paved Valley: Forest",
+            "FromFile": "Maps/Forest/Forest.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+            }
+        },
+
+        //SVE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "LogName": "Paved Valley: Forest SVE",
+            "FromFile": "Maps/Forest/SVE_Forest.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": { "X": 86, "Y": 65 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 87, "Y": 65 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 88, "Y": 65 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 86, "Y": 73 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 87, "Y": 73 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 88, "Y": 74 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "LogName": "Paved Valley: Forest SVE Alec off",
+            "FromFile": "Maps/Forest/SVE_Alec_Compat_off.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+                "HasMod |contains=SoftPandaBoi.CPAlecRevisited": false,
+            }
+        },
+
+        //SVE Alec Compat
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "LogName": "Paved Valley: Forest SVE Alec",
+            "FromFile": "Maps/Forest/SVE_Alec_Compat_on.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, 
+                "HasMod |contains=SoftPandaBoi.CPAlecRevisited": true,
+            }
+        },
+    ]
+}

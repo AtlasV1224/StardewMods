@@ -1,0 +1,52 @@
+{
+  "$schema": "https://smapi.io/schemas/i18n.json",
+
+  //Terracotta Tile
+  "TerracottaStairsItem.DisplayName": "Terracotta Stairs",
+  "TerracottaStairsItem.Description": "Stairs, made from terracotta",
+
+  "TerracottaPoolTileItem.DisplayName": "Terracotta Pool Tile",
+  "TerracottaPoolTileItem.Description": "Pool tiles, made from terracotta",
+
+  "TerracottaHexagonTileItem.DisplayName": "Terracotta Hexagon Tile",
+  "TerracottaHexagonTileItem.Description": "Hexagonal tiles, made from terracotta",
+
+  "TerracottaSquareTileItem.DisplayName": "Terracotta Square Tile",
+  "TerracottaSquareTileItem.Description": "Square tiles, made from terracotta",
+
+  "TerracottaHerringboneTileItem.DisplayName": "Terracotta Herringbone Tile",
+  "TerracottaHerringboneTileItem.Description": "Herringbone tiles, made from terracotta",
+
+  //Stone Walkway
+  "StoneWalkwayStairsItem.DisplayName": "Stone Walkway Stairs",
+  "StoneWalkwayStairsItem.Description": "Stairs, made from stone",
+
+  "StoneSliverWalkwayItem.DisplayName": "Stone Sliver Walkway",
+  "StoneSliverWalkwayItem.Description": "Long and thin tiles, made from stone",
+
+  "CircleSquareStoneWalkwayItem.DisplayName": "Circle Square Stone Walkway",
+  "CircleSquareStoneWalkwayItem.Description": "Square and circle shaped tiles, made from stone",
+
+  "StoneArcWalkwayItem.DisplayName": "Stone Arc Walkway",
+  "StoneArcWalkwayItem.Description": "Arc shaped tiles, made from stone",
+
+  //Stone Floor
+  "StoneFloorStairsItem.DisplayName": "Stone Floor Stairs",
+  "StoneFloorStairsItem.Description": "Stairs, made from stone",
+
+  "HerringboneStoneFloorItem.DisplayName": "Herringbone Stone Floor",
+  "HerringboneStoneFloorItem.Description": "Bricks in a herringbone pattern, made from stone",
+
+  "SquareRingBrickFloorItem.DisplayName": "Square Ring Brick Floor",
+  "SquareRingBrickFloorItem.Description": "Rectangle bricks in a circle , made from stone",
+
+  "IrregularStoneBrickFloorItem.DisplayName": "Irregular Stone Brick Floor",
+  "IrregularStoneBrickFloorItem.Description": "Bricks layed out irregularly, made from stone",
+
+  "StoneBrickFloorItem.DisplayName": "Stone Brick Floor",
+  "StoneBrickFloorItem.Description": "Bricks layed out Regularly, made from stone",
+
+  //Invisible Path
+  "InvisiblePathItem.DisplayName": "Invisible Path",
+  "InvisiblePath.Description": "An invisible path, can be used to prevent grass and debris",
+}

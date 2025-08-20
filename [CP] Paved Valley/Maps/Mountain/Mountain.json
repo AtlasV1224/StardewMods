@@ -1,0 +1,39 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "LogName": "Paved Valley: Mountain",
+            "FromFile": "Maps/Mountain/Mountain.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "LogName": "Paved Valley: SVE_Mountain",
+            "FromFile": "Maps/Mountain/SVE_Mountain.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "MapTiles": [
+                {
+                    "Position": { "X": 17, "Y": 40 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                }
+            ],
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP",
+            }
+        },
+    ]
+}

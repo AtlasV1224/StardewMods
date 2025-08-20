@@ -1,0 +1,66 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "LogName": "Load Table Sprites",
+            "Action": "Load",
+            "Target": "{{ModId}}/Tables",
+            "FromFile": "Furniture/Table/Table_Sprites.png"
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Oak", "SpriteIndex": 0}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Walnut", "SpriteIndex": 1}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Birch", "SpriteIndex": 2}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Mahogany", "SpriteIndex": 3}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Modern", "SpriteIndex": 4}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Winter", "SpriteIndex": 5}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Desert", "SpriteIndex": 6}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Retro", "SpriteIndex": 7}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Wizard", "SpriteIndex": 16}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Grey_Joja", "SpriteIndex": 17}
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Furniture/Table/TableData.json",
+            "LocalTokens": {"Material": "Blue_Joja", "SpriteIndex": 18}
+        },
+    ]
+}

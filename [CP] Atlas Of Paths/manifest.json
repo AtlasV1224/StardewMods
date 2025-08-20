@@ -1,0 +1,18 @@
+{
+  "Name": "[CP] Atlas of Paths",
+  "Author": "AtlasV",
+  "Version": "1.1.0",
+  "Description": "A mod that adds paths",
+  "UniqueID": "AtlasV.AtlasOfPaths",
+  "MinimumApiVersion": "4.2.0",
+  "UpdateKeys": ["Nexus:35598"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "AtlasV.AtlasCatalogue",
+      "IsRequired": false
+    }
+  ]
+}

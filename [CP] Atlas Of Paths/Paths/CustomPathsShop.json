@@ -1,0 +1,126 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "LogName": "Add Atlas of Paths Items Catalogue Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AtlasV.AtlasCatalogueSet",
+                "Items"
+            ],
+            "When": {
+                "HasMod": "AtlasV.AtlasOfPaths"
+            },
+            "Entries": {
+                //Terracotta Path Shop Entries
+                "AtlasOfPaths.(O)841": {
+                    "Id": "AtlasOfPaths.ShopStoneWalkwayFloor",
+                    "ItemId": "(O)841",
+                    "Price": 0
+                },
+                "AtlasOfPaths.(O)411": {
+                    "Id": "AtlasOfPaths.ShopCobblestonePath",
+                    "ItemId": "(O)411",
+                    "Price": 0
+                },
+                "AtlasOfPaths.(O)415": {
+                    "Id": "AtlasOfPaths.ShopSteppingStonePath",
+                    "ItemId": "(O)415",
+                    "Price": 0
+                },
+                "AtlasOfPaths.(O)329": {
+                    "Id": "AtlasOfPaths.ShopStoneFloor",
+                    "ItemId": "(O)329",
+                    "Price": 0
+                },
+                "AtlasOfPaths.(O)323": {
+                    "Id": "AtlasOfPaths.ShopStoneFence",
+                    "ItemId": "(O)323",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopTerracottaStairsItem": {
+                    "Id": "AtlasOfPaths.ShopTerracottaStairsItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_TerracottaStairsItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopTerracottaPoolTileItem": {
+                    "Id": "AtlasOfPaths.ShopTerracottaPoolTileItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_TerracottaPoolTileItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopTerracottaHexagonTileItem": {
+                    "Id": "AtlasOfPaths.ShopTerracottaHexagonTileItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_TerracottaHexagonTileItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopTerracottaSquareTileItem": {
+                    "Id": "AtlasOfPaths.ShopTerracottaSquareTileItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_TerracottaSquareTileItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopTerracottaHerringboneTileItem": {
+                    "Id": "AtlasOfPaths.ShopTerracottaHerringboneTileItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_TerracottaHerringboneTileItem",
+                    "Price": 0
+                },
+
+                //Stone Walkway Shop Entries
+                "AtlasOfPaths.ShopStoneWalkwayStairsItem": {
+                    "Id": "AtlasOfPaths.StoneWalkwayStairsItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_StoneWalkwayStairsItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopStoneSliverWalkwayItem": {
+                    "Id": "AtlasOfPaths.StoneSliverWalkwayItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_StoneSliverWalkwayItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopCircleSquareStoneWalkwayItem": {
+                    "Id": "AtlasOfPaths.ShopCircleSquareStoneWalkwayItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_CircleSquareStoneWalkwayItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopStoneArcWalkwayItem": {
+                    "Id": "AtlasOfPaths.ShopStoneArcWalkwayItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_StoneArcWalkwayItem",
+                    "Price": 0
+                },
+
+                //Stone Floor Shop Entries
+                "AtlasOfPaths.ShopStoneFloorStairsItem": {
+                    "Id": "AtlasOfPaths.ShopStoneFloorStairsItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_StoneFloorStairsItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopHerringboneStoneFloorItem": {
+                    "Id": "AtlasOfPaths.ShopHerringboneStoneFloorItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_HerringboneStoneFloorItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopSquareRingBrickFloorItem": {
+                    "Id": "AtlasOfPaths.ShopSquareRingBrickFloorItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_SquareRingBrickFloorItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopIrregularStoneBrickFloorItem": {
+                    "Id": "AtlasOfPaths.ShopIrregularStoneBrickFloorItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_IrregularStoneBrickFloorItem",
+                    "Price": 0
+                },
+                "AtlasOfPaths.ShopStoneBrickFloorItem": {
+                    "Id": "AtlasOfPaths.ShopStoneBrickFloorItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_StoneBrickFloorItem",
+                    "Price": 0
+                },
+
+                //Invisible Path
+                "AtlasOfPaths.ShopInvisiblePathItem": {
+                    "Id": "AtlasOfPaths.ShopInvisiblePathItem",
+                    "ItemId": "AtlasV.AtlasOfPaths_InvisiblePathItem",
+                    "Price": 0
+                },
+            }
+        }
+    ]
+}

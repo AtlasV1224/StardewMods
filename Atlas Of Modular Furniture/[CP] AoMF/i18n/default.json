@@ -1,0 +1,17 @@
+{
+  "$schema": "https://smapi.io/schemas/i18n.json",
+
+
+  "TestingTable.DisplayName": "Modular Testing Table",
+  "Oak_Modular_Table.DisplayName": "Modular Oak Table",
+  "Walnut_Modular_Table.DisplayName": "Modular Walnut Table",
+  "Birch_Modular_Table.DisplayName": "Modular Birch Table",
+  "Mahogany_Modular_Table.DisplayName": "Modular Mahogany Table",
+  "Modern_Modular_Table.DisplayName": "Modular Modern Table",
+  "Winter_Modular_Table.DisplayName": "Modular Winter Table",
+  "Desert_Modular_Table.DisplayName": "Modular Desert Table",
+  "Retro_Modular_Table.DisplayName": "Modular Retro Table",
+  "Wizard_Modular_Table.DisplayName": "Modular Wizard Table",
+  "Grey_Joja_Modular_Table.DisplayName": "Modular Grey Joja Table",
+  "Blue_Joja_Modular_Table.DisplayName": "Modular Blue Joja Table",
+}

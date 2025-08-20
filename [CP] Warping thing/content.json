@@ -1,0 +1,245 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.7.0",
+   "ConfigSchema": {
+      "FarmX": {
+         "Default": "48",
+         "Section": "Locations"
+      },
+      "FarmY": {
+         "Default": "7",
+         "Section": "Locations"
+      },
+      "BeachX": {
+         "Default": "20",
+         "Section": "Locations"
+      },
+      "BeachY": {
+         "Default": "4",
+         "Section": "Locations"
+      },
+      "MountainX": {
+         "Default": "31",
+         "Section": "Locations"
+      },
+      "MountainY": {
+         "Default": "20",
+         "Section": "Locations"
+      },
+      "DesertX": {
+         "Default": "35",
+         "Section": "Locations"
+      },
+      "DesertY": {
+         "Default": "43",
+         "Section": "Locations"
+      },
+      "IslandX": {
+         "Default": "11",
+         "Section": "Locations"
+      },
+      "IslandY": {
+         "Default": "11",
+         "Section": "Locations"
+      },
+      "TownX": {
+         "Default": "29",
+         "Section": "Locations"
+      },
+      "TownY": {
+         "Default": "67",
+         "Section": "Locations"
+      },
+      "TeleportBuildingX": {
+        "AllowValues": "",
+         "Default": "20",
+         "Section": "Locations"
+      },
+      "TeleportBuildingY": {
+         "Default": "29",
+         "Section": "Locations"
+      },
+   },
+  "Changes": [
+    //Base Building
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_TeleportBuilding":{
+            "DisplayName": "Teleport Building",
+            "DefaultArrivalTile": "34, 12",
+            "CreateOnLoad": {
+                "MapPath": "Maps/{{ModId}}_TeleportBuilding"
+            },
+            "CanHaveGreenRainSpawns": false,
+        }
+      }
+    },
+    {
+        "Action": "Load",
+        "Target": "Maps/{{ModId}}_TeleportBuilding",
+        "FromFile": "Maps/TB_Vanilla.tmx"
+    },
+    {
+        "Action": "EditMap",
+        "Target": "Maps/FarmHouse, Maps/FarmHouse1, Maps/FarmHouse1_marriage, Maps/FarmHouse2, Maps/FarmHouse2_marriage",
+        "FromFile": "Maps/AV_FarmHouse.tmx",
+        "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditMap",
+        "Target": "Maps/FarmHouse, Maps/FarmHouse1, Maps/FarmHouse1_marriage, Maps/FarmHouse2, Maps/FarmHouse2_marriage",
+        "MapTiles": [
+            {
+                "Position": { "X": "{{Round: {{TeleportBuildingX}}}}", "Y": "{{Round: {{TeleportBuildingY}}}}" },
+                "Layer": "Back20",
+                "SetTilesheet": "z_TeleportyThingy",
+                "SetIndex": "0"
+            },
+            {
+                "Position": { "X": "{{Round: {{TeleportBuildingX}}}}", "Y": "{{Round: {{TeleportBuildingY}}}}" },
+                "Layer": "Back",
+                "SetProperties": {
+                  "TouchAction": "MagicWarp AtlasV.TeleportyThingy_TeleportBuilding 34 12",
+                }
+            },
+        ],
+    },
+
+    //Vanilla Warps
+    {
+        "Action": "EditMap",
+        "Target": "Maps/{{ModId}}_TeleportBuilding",
+        "MapTiles": [
+            {
+                "Position": { "X": 26, "Y": 8 },
+                "Layer": "Back",
+                "SetProperties": {
+                  "TouchAction": "MagicWarp Desert {{DesertX}} {{DesertY}}",
+                }
+            },
+            {
+                "Position": { "X": 30, "Y": 7 },
+                "Layer": "Back",
+                "SetProperties": {
+                  "TouchAction": "MagicWarp Mountain {{MountainX}} {{MountainY}}",
+                }
+            },
+            {
+                "Position": { "X": 34, "Y": 6 },
+                "Layer": "Back",
+                "SetProperties": {
+                  "TouchAction": "MagicWarp Farm {{FarmX}} {{FarmY}}",
+                }
+            },
+            {
+                "Position": { "X": 38, "Y": 7 },
+                "Layer": "Back",
+                "SetProperties": {
+                  "TouchAction": "MagicWarp Beach {{BeachX}} {{BeachY}}",
+                }
+            },
+            {
+                "Position": { "X": 42, "Y": 8 },
+                "Layer": "Back",
+                "SetProperties": {
+                  "TouchAction": "MagicWarp IslandSouth {{IslandX}} {{IslandY}}",
+                }
+            },
+            {
+                "Position": { "X": 34, "Y": 15 },
+                "Layer": "Back",
+                "SetProperties": {
+                  "TouchAction": "MagicWarp Town {{TownX}} {{TownY}}",
+                }
+            },
+        ]
+    },
+
+    //Vanilla Shops
+    {
+        "Action": "EditMap",
+        "Target": "Maps/{{ModId}}_TeleportBuilding",
+        "MapTiles": [
+            {
+                "Position": { "X": 3, "Y": 10 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "OpenShop AnimalShop",
+                }
+            },
+            {
+                "Position": { "X": 7, "Y": 9 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "OpenShop Blacksmith",
+                }
+            },
+            {
+                "Position": { "X": 8, "Y": 9 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "OpenShop ClintUpgrade",
+                }
+            },
+            {
+                "Position": { "X": 11, "Y": 8 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "OpenShop SeedShop",
+                }
+            },
+            {
+                "Position": { "X": 15, "Y": 9 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "OpenShop Carpenter",
+                }
+            },
+            {
+                "Position": { "X": 14, "Y": 9 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "Carpenter",
+                }
+            },
+            {
+                "Position": { "X": 19, "Y": 10 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "WizardBook",
+                }
+            },
+            {
+                "Position": { "X": 49, "Y": 10 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "OpenShop ShadowShop",
+                }
+            },
+            {
+                "Position": { "X": 53, "Y": 9 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "OpenShop Sandy",
+                }
+            },
+            {
+                "Position": { "X": 57, "Y": 8 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "QiGemShop",
+                }
+            },
+            {
+                "Position": { "X": 61, "Y": 9 },
+                "Layer": "Buildings",
+                "SetProperties": {
+                  "Action": "OpenShop Traveler",
+                }
+            }
+        ]
+    },
+  ]
+}

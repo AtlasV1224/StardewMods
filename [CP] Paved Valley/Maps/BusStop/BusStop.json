@@ -1,0 +1,88 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        //Vanilla
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "LogName": "Paved Valley: BusStop",
+            "FromFile": "Maps/BusStop/BusStop.tmx",
+            "PatchMode": "Overlay",
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "MapTiles": [
+                {
+                    "Position": { "X": 26, "Y": 13 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                }
+            ]
+        },
+
+        //Ridgeside
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "LogName": "Paved Valley: BusStop",
+            "FromFile": "Maps/BusStop/RSV_BusStop.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasMod": "Rafseazz.RidgesideVillage",
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "MapTiles": [
+                {
+                    "Position": { "X": 38, "Y": 22 },
+                    "Layer": "Back20",
+                    "Remove": true
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RidgesideVillage",
+            }
+        },
+
+        //Prettier Bus Stop
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "MapTiles": [
+                {
+                    "Position": { "X": 16, "Y": 13 },
+                    "Layer": "Back20",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 16, "Y": 14 },
+                    "Layer": "Back20",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 17, "Y": 14 },
+                    "Layer": "Back20",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 16, "Y": 12 },
+                    "Layer": "Back20",
+                    //"SetTilesheet": "Maps/Assets/zzz_AtlasV_StoneWShadow",
+                    "SetIndex": "3"
+                },
+                {
+                    "Position": { "X": 18, "Y": 14 },
+                    "Layer": "Back20",
+                    //"SetTilesheet": "zzz_AtlasV_StoneWShadow",
+                    "SetIndex": "9"
+                },
+            ],
+            "When": {
+                "HasMod": "Kana.PrettierBusStop",
+            }
+        },
+    ]
+}

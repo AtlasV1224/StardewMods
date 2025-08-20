@@ -1,0 +1,269 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/floor",
+            "FromFile": "Paths/Assets/floor.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/floorSprite",
+            "FromFile": "Paths/Assets/floorSprite.png"
+        },
+
+        //Terracotta Paths
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "TerracottaStairsItem",
+                "PathName": "TerracottaStairsTile",
+                "SpriteIndex": 0,
+                "TopLeftX": 0,
+                "TopLeftY": 0,
+                "WinterTopLeftX": 0,
+                "WinterTopLeftY": 0,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "TerracottaPoolTileItem",
+                "PathName": "TerracottaPoolTile",
+                "SpriteIndex": 1,
+                "TopLeftX": 64,
+                "TopLeftY": 0,
+                "WinterTopLeftX": 64,
+                "WinterTopLeftY": 0,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "TerracottaHexagonTileItem",
+                "PathName": "TerracottaHexagonTile",
+                "SpriteIndex": 2,
+                "TopLeftX": 128,
+                "TopLeftY": 0,
+                "WinterTopLeftX": 128,
+                "WinterTopLeftY": 0,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "TerracottaSquareTileItem",
+                "PathName": "TerracottaSquareTile",
+                "SpriteIndex": 3,
+                "TopLeftX": 192,
+                "TopLeftY": 0,
+                "WinterTopLeftX": 192,
+                "WinterTopLeftY": 0,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "TerracottaHerringboneTileItem",
+                "PathName": "TerracottaHerringboneTile",
+                "SpriteIndex": 4,
+                "TopLeftX": 256,
+                "TopLeftY": 0,
+                "WinterTopLeftX": 256,
+                "WinterTopLeftY": 0,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+
+        //Stone Walkway Paths
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "StoneWalkwayStairsItem",
+                "PathName": "StoneWalkwayStairs",
+                "SpriteIndex": 5,
+                "TopLeftX": 0,
+                "TopLeftY": 64,
+                "WinterTopLeftX": 0,
+                "WinterTopLeftY": 64,
+                "ConnectType": "CornerDecorated",
+                "CornerSize": 6
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "StoneSliverWalkwayItem",
+                "PathName": "StoneSliverWalkway",
+                "SpriteIndex": 6,
+                "TopLeftX": 64,
+                "TopLeftY": 64,
+                "WinterTopLeftX": 64,
+                "WinterTopLeftY": 64,
+                "ConnectType": "CornerDecorated",
+                "CornerSize": 6
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "CircleSquareStoneWalkwayItem",
+                "PathName": "CircleSquareStoneWalkway",
+                "SpriteIndex": 7,
+                "TopLeftX": 128,
+                "TopLeftY": 64,
+                "WinterTopLeftX": 128,
+                "WinterTopLeftY": 64,
+                "ConnectType": "CornerDecorated",
+                "CornerSize": 6
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "StoneArcWalkwayItem",
+                "PathName": "StoneArcWalkway",
+                "SpriteIndex": 8,
+                "TopLeftX": 192,
+                "TopLeftY": 64,
+                "WinterTopLeftX": 192,
+                "WinterTopLeftY": 64,
+                "ConnectType": "CornerDecorated",
+                "CornerSize": 6
+            }
+        },
+
+        //Stone Floor
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "StoneFloorStairsItem",
+                "PathName": "StoneFloorStairs",
+                "SpriteIndex": 10,
+                "TopLeftX": 0,
+                "TopLeftY": 128,
+                "WinterTopLeftX": 0,
+                "WinterTopLeftY": 128,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "HerringboneStoneFloorItem",
+                "PathName": "HerringboneStoneFloor",
+                "SpriteIndex": 11,
+                "TopLeftX": 64,
+                "TopLeftY": 128,
+                "WinterTopLeftX": 64,
+                "WinterTopLeftY": 128,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "SquareRingBrickFloorItem",
+                "PathName": "SquareRingBrickFloor",
+                "SpriteIndex": 12,
+                "TopLeftX": 128,
+                "TopLeftY": 128,
+                "WinterTopLeftX": 128,
+                "WinterTopLeftY": 128,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "IrregularStoneBrickFloorItem",
+                "PathName": "IrregularStoneBrickFloor",
+                "SpriteIndex": 13,
+                "TopLeftX": 192,
+                "TopLeftY": 128,
+                "WinterTopLeftX": 192,
+                "WinterTopLeftY": 128,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "StoneBrickFloorItem",
+                "PathName": "StoneBrickFloor",
+                "SpriteIndex": 14,
+                "TopLeftX": 256,
+                "TopLeftY": 128,
+                "WinterTopLeftX": 256,
+                "WinterTopLeftY": 128,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            }
+        },
+
+        //Invisible Path
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "InvisiblePathItem",
+                "PathName": "InvisiblePath",
+                "SpriteIndex": 15,
+                "TopLeftX": 0,
+                "TopLeftY": 192,
+                "WinterTopLeftX": 0,
+                "WinterTopLeftY": 192,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            },
+            "When": {
+                "ShowInvisiblePaths": "true"
+            }
+        },
+        { 
+            "Action": "Include",
+            "FromFile": "Paths/pathData.json",
+            "LocalTokens": {
+                "PathNameItem": "InvisiblePathItem",
+                "PathName": "InvisiblePath",
+                "SpriteIndex": 15,
+                "TopLeftX": 64,
+                "TopLeftY": 192,
+                "WinterTopLeftX": 64,
+                "WinterTopLeftY": 192,
+                "ConnectType": "Default",
+                "CornerSize": 4
+            },
+            "When": {
+                "ShowInvisiblePaths": "false"
+            }
+        },
+    ]
+}

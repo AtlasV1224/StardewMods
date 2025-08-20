@@ -1,0 +1,20 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.7.0",
+  "ConfigSchema": {
+    "ShowInvisiblePaths":{
+      "AllowValues": "true, false",
+      "Default": "true"
+    }
+  },
+  "Changes": [
+    { 
+      "Action": "Include",
+      "FromFile": "Paths/CustomPaths.json"
+    },
+    { 
+      "Action": "Include",
+      "FromFile": "Paths/CustomPathsShop.json"
+    }
+  ]
+}

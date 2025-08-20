@@ -1,0 +1,17 @@
+{
+  "Name": "[CP] Atlas Of Modular Furniture (AoMF)",
+  "Author": "AtlasV",
+  "Version": "1.0.0",
+  "Description": "Adds modular furniture to Stardew Valley using Content Patcher.",
+  "UniqueID": "AtlasV.CPAtlasOfModularFurniture",
+  "UpdateKeys": ["Nexus:???"],
+  "Dependencies": [
+      {
+          "UniqueID": "AtlasV.AtlasCatalogue",
+          "IsRequired": false
+      }
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

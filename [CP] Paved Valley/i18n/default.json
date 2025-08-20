@@ -1,0 +1,13 @@
+{
+    "config.Recolour.name": "Recolour",
+    "config.Recolour.description": "The recolour for which to match the paths with",
+    "config.Recolour.values.AutoDetect": "Auto-Detect",
+    "config.Recolour.values.Vanilla": "Vanilla",
+    "config.Recolour.values.Earthy": "Earthy",
+    "config.Recolour.values.Wittily": "Wittily",
+    "config.Recolour.values.StarBlue": "StarBlue",
+    "config.Recolour.values.BlueGrass": "Blue Grass",
+    "config.Recolour.values.ReStarFoli": "Recolor Stardew Foliage",
+    "config.section.Appearance.name": "Appearance",
+
+}

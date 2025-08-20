@@ -1,0 +1,17 @@
+{
+    "Name": "The Atlas Collection Catalogue",
+    "Author": "AtlasV",
+    "Version": "1.0.1",
+    "Description": "Adds a new catalogue for my collection of decor mods.",
+    "UniqueID": "AtlasV.AtlasCatalogue",
+    "UpdateKeys": ["Nexus:35658"],
+    "Dependencies": [
+        {
+            "UniqueID": "sophie.Calcifer",
+            "IsRequired": true
+        }
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

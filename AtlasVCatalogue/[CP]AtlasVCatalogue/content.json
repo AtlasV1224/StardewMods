@@ -1,0 +1,9 @@
+{
+    "Format": "2.5.0",
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "Data/Furniture.json, Data/Shops.json"
+        }
+    ]
+}

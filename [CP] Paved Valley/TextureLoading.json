@@ -1,0 +1,74 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        //Tilesheet and recolours
+        {
+            "Action": "Load",
+            "Target": "Maps/zzz_AtlasV_StoneWShadow",
+            "FromFile": "Maps/Assets/AV_Vanilla_{{season}}.png",
+            "When": {
+                "HasMod |contains=DaisyNiko.EarthyRecolour": false,
+                "HasMod |contains=Acerbicon.Recolor": false,
+                "HasMod |contains=Lita.StarblueValleyUnofficial": false,
+                "HasMod |contains=colling.bluegrass": false,
+                "HasMod |contains=recolorstardewfoliage": false,
+                "Recolour": "AutoDetect"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/zzz_AtlasV_StoneWShadow",
+            "FromFile": "Maps/Assets/AV_Earthy_{{season}}.png",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+                "Recolour": "AutoDetect"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/zzz_AtlasV_StoneWShadow",
+            "FromFile": "Maps/Assets/AV_Wittily_{{season}}.png",
+            "When": {
+                "HasMod": "Acerbicon.Recolor",
+                "Recolour": "AutoDetect"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/zzz_AtlasV_StoneWShadow",
+            "FromFile": "Maps/Assets/AV_StarBlue_{{season}}.png",
+            "When": {
+                "HasMod": "Lita.StarblueValleyUnofficial",
+                "Recolour": "AutoDetect"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/zzz_AtlasV_StoneWShadow",
+            "FromFile": "Maps/Assets/AV_BlueGrass_{{season}}.png",
+            "When": {
+                "HasMod": "colling.bluegrass",
+                "Recolour": "AutoDetect"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/zzz_AtlasV_StoneWShadow",
+            "FromFile": "Maps/Assets/AV_ReStarFoli_{{season}}.png",
+            "When": {
+                "HasMod": "recolorstardewfoliage",
+                "Recolour": "AutoDetect"
+            }
+        },
+
+        //Auto-Detect
+        {
+            "Action": "Load",
+            "Target": "Maps/zzz_AtlasV_StoneWShadow",
+            "FromFile": "Maps/Assets/AV_{{Recolour}}_{{season}}.png",
+            "When": {
+                "Recolour": "Vanilla, Earthy, Wittily, StarBlue, BlueGrass, ReStarFoli"
+            }
+        },
+    ]
+}

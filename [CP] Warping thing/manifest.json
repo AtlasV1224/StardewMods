@@ -1,0 +1,18 @@
+{
+  "Name": "TeleportyThingy",
+  "Author": "AtlasV",
+  "Version": "1.0.0",
+  "Description": "",
+  "UniqueID": "AtlasV.TeleportyThingy",
+  "MinimumApiVersion": "4.2.0",
+  "UpdateKeys": ["Nexus:???"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Spiderbuttons.ArbitraryTilesheetAccess",
+      "IsRequired": false
+    },
+  ]
+}

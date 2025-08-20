@@ -1,0 +1,3231 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.7.0",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/NutrientSlopTexture",
+            "FromFile": "Assets/slop.png"
+        },
+        // add item
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_NutrientSlop": {
+                    "Name": "{{ModId}}_NutrientSlop", // best practice to match the ID, since it's sometimes used as an alternate ID (e.g. in Data/CraftingRecipes)
+                    "Displayname": "Nutrient Slop",
+                    "Description": "Slop, now with added nutrients!",
+                    "Type": "Slop",
+                    "Category": -25,
+                    "Price": 0,
+                    "Texture": "{{ModId}}/NutrientSlopTexture",
+                    "SpriteIndex": 0,
+                    "Edibility": 2,
+                    "ContextTags": ["atlasv_slop_machine_exclude"]
+                }
+            }
+        },
+
+        // add gift tastes
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Hate"],
+                    "Value": "{{ModId}}_NutrientSlop",
+                    "Delimiter": " " // if there are already values, add a space between them and the new one
+                }
+            ]
+        },
+        {
+            "Action": "Load",
+            "Target": "Cornucopia.ArtisanMachines/Animations",
+            "FromFile": "Assets/slop.png"
+        },
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC)NutrientSlopMachine": {
+					"OutputRules": [
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 1000"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 500,
+								"MaxStack": 500,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 990"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 495,
+								"MaxStack": 495,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 980"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 490,
+								"MaxStack": 490,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 970"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 485,
+								"MaxStack": 485,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 960"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 480,
+								"MaxStack": 480,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 950"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 475,
+								"MaxStack": 475,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 940"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 470,
+								"MaxStack": 470,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 930"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 465,
+								"MaxStack": 465,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 920"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 460,
+								"MaxStack": 460,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 910"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 455,
+								"MaxStack": 455,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 900"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 450,
+								"MaxStack": 450,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 890"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 445,
+								"MaxStack": 445,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 880"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 440,
+								"MaxStack": 440,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 870"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 435,
+								"MaxStack": 435,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 860"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 430,
+								"MaxStack": 430,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 850"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 425,
+								"MaxStack": 425,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 840"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 420,
+								"MaxStack": 420,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 830"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 415,
+								"MaxStack": 415,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 820"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 410,
+								"MaxStack": 410,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 810"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 405,
+								"MaxStack": 405,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 800"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 400,
+								"MaxStack": 400,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 790"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 395,
+								"MaxStack": 395,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 780"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 390,
+								"MaxStack": 390,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 770"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 385,
+								"MaxStack": 385,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 760"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 380,
+								"MaxStack": 380,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 750"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 375,
+								"MaxStack": 375,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 740"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 370,
+								"MaxStack": 370,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 730"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 365,
+								"MaxStack": 365,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 720"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 360,
+								"MaxStack": 360,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 710"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 355,
+								"MaxStack": 355,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 700"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 350,
+								"MaxStack": 350,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 690"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 345,
+								"MaxStack": 345,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 680"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 340,
+								"MaxStack": 340,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 670"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 335,
+								"MaxStack": 335,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 660"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 330,
+								"MaxStack": 330,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 650"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 325,
+								"MaxStack": 325,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 640"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 320,
+								"MaxStack": 320,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 630"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 315,
+								"MaxStack": 315,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 620"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 310,
+								"MaxStack": 310,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 610"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 305,
+								"MaxStack": 305,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 600"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 300,
+								"MaxStack": 300,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 590"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 295,
+								"MaxStack": 295,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 580"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 290,
+								"MaxStack": 290,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 570"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 285,
+								"MaxStack": 285,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 560"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 280,
+								"MaxStack": 280,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 550"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 275,
+								"MaxStack": 275,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 540"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 270,
+								"MaxStack": 270,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 530"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 265,
+								"MaxStack": 265,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 520"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 260,
+								"MaxStack": 260,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 510"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 255,
+								"MaxStack": 255,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 500"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 250,
+								"MaxStack": 250,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 495"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 247,
+								"MaxStack": 247,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 490"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 245,
+								"MaxStack": 245,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 485"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 242,
+								"MaxStack": 242,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 480"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 240,
+								"MaxStack": 240,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 475"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 237,
+								"MaxStack": 237,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 470"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 235,
+								"MaxStack": 235,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 465"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 232,
+								"MaxStack": 232,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 460"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 230,
+								"MaxStack": 230,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 455"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 227,
+								"MaxStack": 227,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 450"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 225,
+								"MaxStack": 225,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 445"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 222,
+								"MaxStack": 222,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 440"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 220,
+								"MaxStack": 220,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 435"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 217,
+								"MaxStack": 217,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 430"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 215,
+								"MaxStack": 215,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 425"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 212,
+								"MaxStack": 212,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 420"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 210,
+								"MaxStack": 210,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 415"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 207,
+								"MaxStack": 207,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 410"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 205,
+								"MaxStack": 205,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 405"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 202,
+								"MaxStack": 202,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 400"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 200,
+								"MaxStack": 200,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 395"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 197,
+								"MaxStack": 197,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 390"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 195,
+								"MaxStack": 195,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 385"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 192,
+								"MaxStack": 192,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 380"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 190,
+								"MaxStack": 190,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 375"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 187,
+								"MaxStack": 187,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 370"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 185,
+								"MaxStack": 185,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 365"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 182,
+								"MaxStack": 182,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 360"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 180,
+								"MaxStack": 180,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 355"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 177,
+								"MaxStack": 177,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 350"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 175,
+								"MaxStack": 175,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 345"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 172,
+								"MaxStack": 172,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 340"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 170,
+								"MaxStack": 170,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 335"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 167,
+								"MaxStack": 167,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 330"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 165,
+								"MaxStack": 165,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 325"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 162,
+								"MaxStack": 162,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 320"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 160,
+								"MaxStack": 160,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 315"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 157,
+								"MaxStack": 157,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 310"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 155,
+								"MaxStack": 155,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 305"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 152,
+								"MaxStack": 152,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 300"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 150,
+								"MaxStack": 150,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 295"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 147,
+								"MaxStack": 147,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 290"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 145,
+								"MaxStack": 145,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 285"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 142,
+								"MaxStack": 142,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 280"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 140,
+								"MaxStack": 140,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 275"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 137,
+								"MaxStack": 137,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 270"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 135,
+								"MaxStack": 135,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 265"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 132,
+								"MaxStack": 132,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 260"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 130,
+								"MaxStack": 130,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 255"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 127,
+								"MaxStack": 127,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 250"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 125,
+								"MaxStack": 125,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 245"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 122,
+								"MaxStack": 122,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 240"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 120,
+								"MaxStack": 120,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 235"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 117,
+								"MaxStack": 117,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 230"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 115,
+								"MaxStack": 115,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 225"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 112,
+								"MaxStack": 112,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 220"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 110,
+								"MaxStack": 110,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 215"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 107,
+								"MaxStack": 107,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 210"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 105,
+								"MaxStack": 105,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 205"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 102,
+								"MaxStack": 102,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 200"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 100,
+								"MaxStack": 100,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 195"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 97,
+								"MaxStack": 97,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 190"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 95,
+								"MaxStack": 95,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 185"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 92,
+								"MaxStack": 92,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 180"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 90,
+								"MaxStack": 90,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 175"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 87,
+								"MaxStack": 87,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 170"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 85,
+								"MaxStack": 85,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 165"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 82,
+								"MaxStack": 82,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 160"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 80,
+								"MaxStack": 80,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 155"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 77,
+								"MaxStack": 77,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 150"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 75,
+								"MaxStack": 75,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 145"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 72,
+								"MaxStack": 72,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 140"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 70,
+								"MaxStack": 70,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 135"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 67,
+								"MaxStack": 67,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 130"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 65,
+								"MaxStack": 65,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 125"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 62,
+								"MaxStack": 62,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 120"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 60,
+								"MaxStack": 60,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 115"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 57,
+								"MaxStack": 57,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 110"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 55,
+								"MaxStack": 55,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 105"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 52,
+								"MaxStack": 52,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 100"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 50,
+								"MaxStack": 50,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 98"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 49,
+								"MaxStack": 49,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 96"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 48,
+								"MaxStack": 48,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 94"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 47,
+								"MaxStack": 47,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 92"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 46,
+								"MaxStack": 46,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 90"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 45,
+								"MaxStack": 45,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 88"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 44,
+								"MaxStack": 44,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 86"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 43,
+								"MaxStack": 43,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 84"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 42,
+								"MaxStack": 42,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 82"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 41,
+								"MaxStack": 41,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 80"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 40,
+								"MaxStack": 40,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 78"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 39,
+								"MaxStack": 39,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 76"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 38,
+								"MaxStack": 38,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 74"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 37,
+								"MaxStack": 37,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 72"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 36,
+								"MaxStack": 36,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 70"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 35,
+								"MaxStack": 35,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 68"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 34,
+								"MaxStack": 34,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 66"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 33,
+								"MaxStack": 33,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 64"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 32,
+								"MaxStack": 32,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 62"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 31,
+								"MaxStack": 31,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 60"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 30,
+								"MaxStack": 30,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 58"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 29,
+								"MaxStack": 29,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 56"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 28,
+								"MaxStack": 28,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 54"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 27,
+								"MaxStack": 27,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 52"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 26,
+								"MaxStack": 26,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 50"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 25,
+								"MaxStack": 25,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 48"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 24,
+								"MaxStack": 24,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 46"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 23,
+								"MaxStack": 23,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 44"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 22,
+								"MaxStack": 22,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 42"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 21,
+								"MaxStack": 21,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 40"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 20,
+								"MaxStack": 20,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 38"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 19,
+								"MaxStack": 19,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 36"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 18,
+								"MaxStack": 18,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 34"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 17,
+								"MaxStack": 17,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 32"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 16,
+								"MaxStack": 16,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 30"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 15,
+								"MaxStack": 15,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 28"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 14,
+								"MaxStack": 14,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 26"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 13,
+								"MaxStack": 13,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 24"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 12,
+								"MaxStack": 12,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 22"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 11,
+								"MaxStack": 11,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 20"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 10,
+								"MaxStack": 10,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 18"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 9,
+								"MaxStack": 9,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 16"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 8,
+								"MaxStack": 8,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 14"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 7,
+								"MaxStack": 7,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 12"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 6,
+								"MaxStack": 6,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 10"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 5,
+								"MaxStack": 5,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 8"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 4,
+								"MaxStack": 4,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 6"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 3,
+								"MaxStack": 3,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+						{
+						"Id": "ArtisanGoods_To_NutrientSlop",
+						"Triggers": [
+							{
+								"RequiredTags": ["!atlasv_slop_machine_exclude"],
+								"Condition": "ITEM_EDIBILITY Input 4"
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_NutrientSlop",
+								"MinStack": 2,
+								"MaxStack": 2,
+							}
+						],
+						"MinutesUntilReady": 20
+						},
+
+					],
+					"LoadEffects": [
+						{
+							"Sounds": [
+								{
+									"Id": "Ship"
+								},
+								{
+									"Id": "bubbles",
+									"Delay": 0
+								}
+							],
+							"TemporarySprites": [
+								{
+									"Texture": "Cornucopia.ArtisanMachines/Animations",
+									"SourceRect": {
+										"X": 0,
+										"Y": 128,
+										"Width": 64,
+										"Height": 128
+									},
+									"Interval": 80.0,
+									"Frames": 6,
+									"Loops": 999999,
+									"PositionOffset": "0, -32",
+									"SortOffset": 0.0,
+									"AlphaFade": 0.005,
+									"Scale": 0.25,
+									"ScaleChange": 0.0,
+									"Rotation": 0.0,
+									"RotationChange": 0.0
+								}
+							]
+						}
+					],
+					"WorkingEffects": [
+						{
+							"Sound": "bubbles",
+							"TemporarySprites": [
+								{
+									"Texture": "Cornucopia.ArtisanMachines/Animations",
+									"SourceRect": {
+										"X": 0,
+										"Y": 128,
+										"Width": 64,
+										"Height": 128
+									},
+									"Interval": 80.0,
+									"Frames": 6,
+									"Loops": 999999,
+									"PositionOffset": "0, -32",
+									"SortOffset": 0.0,
+									"AlphaFade": 0.005,
+									"Scale": 0.25,
+									"ScaleChange": 0.0,
+									"Rotation": 0.0,
+									"RotationChange": 0.0
+								}
+							]
+						}
+					],
+					"WobbleWhileWorking": true
+				}
+			}
+		},
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/ProteinBarTexture",
+            "FromFile": "Assets/proteinbar.png"
+        },
+        // add item
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_ProteinBar": {
+                    "Name": "{{ModId}}_ProteinBar", // best practice to match the ID, since it's sometimes used as an alternate ID (e.g. in Data/CraftingRecipes)
+                    "Displayname": "\"Protein\" Bar",
+                    "Description": "Compacted Slop in bar form",
+                    "Type": "Slop",
+                    "Category": -7,
+                    "Price": 10,
+                    "Texture": "{{ModId}}/ProteinBarTexture",
+                    "SpriteIndex": 0,
+                    "Edibility": 80,
+                    "ContextTags": ["atlasv_slop_machine_exclude"]
+                }
+            }
+        },
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC)158": {
+					"OutputRules": [
+                        {
+						"Id": "NutrientSlop_To_ProteinBar",
+						"Triggers": [
+							{
+								"RequiredItemId": "{{ModId}}_NutrientSlop",
+                                "RequiredCount": 40
+							},
+						],
+						"OutputItem": [
+							{
+								"ItemId": "{{ModId}}_ProteinBar",
+							}
+						],
+						"MinutesUntilReady": 10
+						},
+					]
+				}
+			},
+		},
+        {
+            "Action": "Load",
+            "Target": "Cornucopia.ArtisanMachines/Craftables",
+            "FromFile": "Assets/craftables.png"
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"NutrientSlopMachine": {
+					"Name": "NutrientSlopMachine",
+					"DisplayName": "Nutrient Slop Machine",
+					"Description": "Makes nutrient slop",
+					"Texture": "Cornucopia.ArtisanMachines/Craftables",
+					"SpriteIndex": 5
+				}
+			}
+		}
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Modular Items to Catalogue Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "AtlasV.AtlasCatalogueSet": {
+                    "PriceModifiers": null,
+                    "PriceModifierMode": "Stack",
+                    "Items": [
+                        {
+                            "Price": 0,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Default",
+                            "ItemId": "ALL_ITEMS (F)",
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_AtlasV"
+                        }
+                    ],
+                    "CustomFields": {
+                        "HappyHomeDesigner/Catalogue": "true"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Add Catalogue Tile Actions",
+            "Action": "EditData",
+            "Target": "sophie.Calcifer/FurnitureActions",
+            "Entries": {
+                "(F)AtlasV.AtlasCatalogue": {
+                    "TileActions": [
+                        {
+                            "TileAction": "OpenShop AtlasV.AtlasCatalogueSet"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Catalogue to Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "AtlasV.AtlasCatalogue": {
+                    "Id": "AtlasV.AtlasCatalogue",
+                    "ItemId": "(F)AtlasV.AtlasCatalogue",
+                    "Price": "15000"
+                }
+            }
+        }
+    ]
+}
