@@ -7,6 +7,9 @@
             "LogName": "Paved Valley: IF2R",
             "FromFile": "Maps/IF2R/IF2R.tmx",
             "PatchMode": "Overlay",
+            "When": {
+                "IF2R": "true"
+            }
         },
     ]
 }
