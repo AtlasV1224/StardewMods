@@ -9,8 +9,8 @@
                 "{{ModId}}_BusStopMap": {
                     "MapPath": "Maps/BusStop",
                     "MapPosition":{
-                        "X":5000,
-                        "Y":5000
+                        "X":4978,
+                        "Y":4989
                     }
                 }
             }
@@ -22,8 +22,8 @@
                 "{{ModId}}_TownMap": {
                     "MapPath": "Maps/Town",
                     "MapPosition":{
-                        "X":5070,
-                        "Y":4969
+                        "X":5058,
+                        "Y":4987
                     }
                 }
             }
@@ -35,8 +35,8 @@
                 "{{ModId}}_MountainMap": {
                     "MapPath": "Maps/Mountain",
                     "MapPosition":{
-                        "X":5115,
-                        "Y":4910
+                        "X":5102,
+                        "Y":4929
                     }
                 }
             }
@@ -48,8 +48,8 @@
                 "{{ModId}}_RailRoadMap": {
                     "MapPath": "Maps/RailRoad",
                     "MapPosition":{
-                        "X":5095,
-                        "Y":4845
+                        "X":5062,
+                        "Y":4854
                     }
                 }
             }
@@ -74,8 +74,8 @@
                 "{{ModId}}_BeachMap": {
                     "MapPath": "Maps/Beach",
                     "MapPosition":{
-                        "X":5120,
-                        "Y":5100
+                        "X":5108,
+                        "Y":5117
                     }
                 }
             }
@@ -87,8 +87,8 @@
                 "{{ModId}}_ForestMap": {
                     "MapPath": "Maps/Forest",
                     "MapPosition":{
-                        "X":4945,
-                        "Y":5036
+                        "X":4916,
+                        "Y":5047
                     }
                 }
             }
@@ -100,8 +100,8 @@
                 "{{ModId}}_SecretWoodsMap": {
                     "MapPath": "Maps/Woods",
                     "MapPosition":{
-                        "X":4870,
-                        "Y":5010
+                        "X":4843,
+                        "Y":5031
                     }
                 }
             }
@@ -113,8 +113,26 @@
                 "{{ModId}}_BackwoodsMap": {
                     "MapPath": "Maps/backwoods",
                     "MapPosition":{
-                        "X":4950,
-                        "Y":4920
+                        "X":4903,
+                        "Y":4926
+                    }
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/OWInterconnects",
+            "FromFile": "Assets/InterConnects.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_InterConnects": {
+                    "MapPath": "Maps/OWInterConnects",
+                    "MapPosition":{
+                        "X":4815,
+                        "Y":4837
                     }
                 }
             }
@@ -123,7 +141,3 @@
 }
 
 
-//4870
-//4811
-//5250
-//5155
