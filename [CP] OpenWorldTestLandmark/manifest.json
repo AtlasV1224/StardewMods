@@ -1,0 +1,18 @@
+{
+    "Name": "OpenWorldTestingLocation",
+    "Author": "AtlasV",
+    "Version": "1.0.0",
+    "Description": "Testing Adding locations to StardewOpenWorld",
+    "UniqueID": "AtlasV.OpenWorldTestingLocation",
+    "UpdateKeys": [ "Nexus:???" ],
+    "ContentPackFor": 
+	{
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+    "Dependencies": [
+    {
+      "UniqueID": "aedenthorn.StardewOpenWorld",
+      "IsRequired": true
+    }
+  ]
+}

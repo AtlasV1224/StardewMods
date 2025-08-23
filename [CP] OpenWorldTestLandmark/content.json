@@ -1,0 +1,45 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.7.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_BusStopMap": {
+                    "MapPath": "Maps/BusStop",
+                    "MapPosition":{
+                        "X":5000,
+                        "Y":5000
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_TownMap": {
+                    "MapPath": "Maps/Town",
+                    "MapPosition":{
+                        "X":5070,
+                        "Y":4969
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_MountainMap": {
+                    "MapPath": "Maps/Mountain",
+                    "MapPosition":{
+                        "X":5115,
+                        "Y":4910
+                    }
+                }
+            }
+        },
+    ]
+}
