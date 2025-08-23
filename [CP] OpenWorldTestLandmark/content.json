@@ -41,5 +41,89 @@
                 }
             }
         },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_RailRoadMap": {
+                    "MapPath": "Maps/RailRoad",
+                    "MapPosition":{
+                        "X":5095,
+                        "Y":4845
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_SummitMap": {
+                    "MapPath": "Maps/Summit",
+                    "MapPosition":{
+                        "X":5118,
+                        "Y":4800
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_BeachMap": {
+                    "MapPath": "Maps/Beach",
+                    "MapPosition":{
+                        "X":5120,
+                        "Y":5100
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_ForestMap": {
+                    "MapPath": "Maps/Forest",
+                    "MapPosition":{
+                        "X":4945,
+                        "Y":5036
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_SecretWoodsMap": {
+                    "MapPath": "Maps/Woods",
+                    "MapPosition":{
+                        "X":4870,
+                        "Y":5010
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.StardewOpenWorld/landmarks",
+            "Entries": {
+                "{{ModId}}_BackwoodsMap": {
+                    "MapPath": "Maps/backwoods",
+                    "MapPosition":{
+                        "X":4950,
+                        "Y":4920
+                    }
+                }
+            }
+        },
     ]
 }
+
+
+//4870
+//4811
+//5250
+//5155
