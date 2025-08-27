@@ -126,6 +126,18 @@
         },
         {
             "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_OWInterconnects": {
+                    "DefaultArrivalTile": "271, 217",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/OWInterConnects"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
             "Target": "aedenthorn.StardewOpenWorld/landmarks",
             "Entries": {
                 "{{ModId}}_InterConnects": {
