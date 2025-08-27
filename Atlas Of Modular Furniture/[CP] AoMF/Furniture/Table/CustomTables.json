@@ -10,57 +10,57 @@
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Oak", "SpriteIndex": 0}
+            "LocalTokens": {"Material": "Oak", "SpriteIndex": 0, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Walnut", "SpriteIndex": 1}
+            "LocalTokens": {"Material": "Walnut", "SpriteIndex": 1, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Birch", "SpriteIndex": 2}
+            "LocalTokens": {"Material": "Birch", "SpriteIndex": 2, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Mahogany", "SpriteIndex": 3}
+            "LocalTokens": {"Material": "Mahogany", "SpriteIndex": 3, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Modern", "SpriteIndex": 4}
+            "LocalTokens": {"Material": "Modern", "SpriteIndex": 4, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Winter", "SpriteIndex": 5}
+            "LocalTokens": {"Material": "Winter", "SpriteIndex": 5, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Desert", "SpriteIndex": 6}
+            "LocalTokens": {"Material": "Desert", "SpriteIndex": 6, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Retro", "SpriteIndex": 7}
+            "LocalTokens": {"Material": "Retro", "SpriteIndex": 7, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Wizard", "SpriteIndex": 16}
+            "LocalTokens": {"Material": "Wizard", "SpriteIndex": 16, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Grey_Joja", "SpriteIndex": 17}
+            "LocalTokens": {"Material": "Grey_Joja", "SpriteIndex": 17, "Xoffset": 0, "Yoffset": 0}
         },
         { 
             "Action": "Include",
             "FromFile": "Furniture/Table/TableData.json",
-            "LocalTokens": {"Material": "Blue_Joja", "SpriteIndex": 18}
+            "LocalTokens": {"Material": "Blue_Joja", "SpriteIndex": 18, "Xoffset": 0, "Yoffset": 0}
         },
     ]
 }

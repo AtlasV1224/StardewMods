@@ -8,7 +8,11 @@
   "Dependencies": [
       {
           "UniqueID": "AtlasV.AtlasCatalogue",
-          "IsRequired": false
+          "IsRequired": true
+      },
+      {
+          "UniqueID": "mushymato.MMAP",
+          "IsRequired": true
       }
   ],
   "ContentPackFor": {

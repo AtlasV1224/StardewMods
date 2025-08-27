@@ -8,6 +8,28 @@
             "Entries": {
                 "AtlasV.{{Material}}_Modular_Table": "AtlasV.{{Material}}_Modular_Table/table/1 2/1 1/1/0/2/{{i18n:{{Material}}_Modular_Table.DisplayName}}/{{SpriteIndex}}/{{ModId}}\\Tables/true/collection_AtlasV"
             }
+        },
+        {
+            "Action": "EditData",
+            "Target": "mushymato.MMAP/ConnectedTextures",
+            "Entries": {
+                "(F)AtlasV.{{Material}}_Modular_Table": {
+                    "Style": "Simple",
+                    "ConnectWith": [
+                        "(F)AtlasV.{{Material}}_Modular_Table",
+                    ],
+                    // If this is a furniture and the default logic is failing to account for the full width or height of sprites, use this to change the offsets accordingly
+                    // You can leave the one that does not need change at 0
+                    //"FurnitureOffset": "32,32"
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "sophie.Calcifer/FurnitureOffsets",
+            "Entries": {
+                "(F)AtlasV.{{Material}}_Modular_Table": "{{Xoffset}}, {{Yoffset}}"
+            }
         }
     ]
 }
