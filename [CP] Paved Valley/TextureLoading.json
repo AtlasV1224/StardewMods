@@ -6,17 +6,17 @@
             "Action": "Load",
             "Target": "Maps/zzz_AtlasV_StoneWShadow",
             "FromFile": "Maps/Assets/AV_Vanilla_{{season}}.png",
-            "When": {
-                "HasMod |contains=DaisyNiko.EarthyRecolour": false,
-                "HasMod |contains=Acerbicon.Recolor": false,
-                "HasMod |contains=Lita.StarblueValleyUnofficial": false,
-                "HasMod |contains=colling.bluegrass": false,
-                "HasMod |contains=recolorstardewfoliage": false,
-                "Recolour": "AutoDetect"
-            }
+            // "When": {
+            //     "HasMod |contains=DaisyNiko.EarthyRecolour": false,
+            //     "HasMod |contains=Acerbicon.Recolor": false,
+            //     "HasMod |contains=Lita.StarblueValleyUnofficial": false,
+            //     "HasMod |contains=colling.bluegrass": false,
+            //     "HasMod |contains=recolorstardewfoliage": false,
+            //     "Recolour": "AutoDetect"
+            // }
         },
         {
-            "Action": "Load",
+            "Action": "EditImage",
             "Target": "Maps/zzz_AtlasV_StoneWShadow",
             "FromFile": "Maps/Assets/AV_Earthy_{{season}}.png",
             "When": {
@@ -25,7 +25,7 @@
             }
         },
         {
-            "Action": "Load",
+            "Action": "EditImage",
             "Target": "Maps/zzz_AtlasV_StoneWShadow",
             "FromFile": "Maps/Assets/AV_Wittily_{{season}}.png",
             "When": {
@@ -34,7 +34,7 @@
             }
         },
         {
-            "Action": "Load",
+            "Action": "EditImage",
             "Target": "Maps/zzz_AtlasV_StoneWShadow",
             "FromFile": "Maps/Assets/AV_StarBlue_{{season}}.png",
             "When": {
@@ -43,7 +43,7 @@
             }
         },
         {
-            "Action": "Load",
+            "Action": "EditImage",
             "Target": "Maps/zzz_AtlasV_StoneWShadow",
             "FromFile": "Maps/Assets/AV_BlueGrass_{{season}}.png",
             "When": {
@@ -52,7 +52,7 @@
             }
         },
         {
-            "Action": "Load",
+            "Action": "EditImage",
             "Target": "Maps/zzz_AtlasV_StoneWShadow",
             "FromFile": "Maps/Assets/AV_ReStarFoli_{{season}}.png",
             "When": {
@@ -63,7 +63,7 @@
 
         //Auto-Detect
         {
-            "Action": "Load",
+            "Action": "EditImage",
             "Target": "Maps/zzz_AtlasV_StoneWShadow",
             "FromFile": "Maps/Assets/AV_{{Recolour}}_{{season}}.png",
             "When": {

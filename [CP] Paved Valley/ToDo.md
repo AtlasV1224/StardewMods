@@ -50,3 +50,5 @@
 ## Look into support for these mods if they need it
 - [ ] East Scarp                 
 - [ ] Dynamic Reflections Compat 
+
+## Bugs
