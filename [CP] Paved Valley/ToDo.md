@@ -52,3 +52,4 @@
 - [ ] Dynamic Reflections Compat 
 
 ## Bugs
+- Forest map has bush in path when using alec

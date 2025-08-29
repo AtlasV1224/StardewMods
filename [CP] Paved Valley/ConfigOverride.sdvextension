@@ -18,5 +18,5 @@
 
 	// The version of the mod, if specified, the mod zip folder will have the version added after
 
-	"ModVersion": "1.4.0"
+	"ModVersion": "1.5.1"
 }

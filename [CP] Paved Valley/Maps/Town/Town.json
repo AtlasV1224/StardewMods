@@ -214,5 +214,72 @@
         //         "HasMod": "SunberryTeam.SBVSMAPI, FlashShifter.StardewValleyExpandedCP",
         //     }
         // },
+
+
+        // Stardew Valley Maps Retouched
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles": [
+                {
+                    "Position": { "X": 52, "Y": 27 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 52, "Y": 28 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 52, "Y": 29 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 53, "Y": 30 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 53, "Y": 32 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 53, "Y": 33 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 49, "Y": 34 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 45, "Y": 35 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 34, "Y": 35 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 33, "Y": 35 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 20, "Y": 36 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod |contains=jenf1.mapsretouched": true, 
+            }
+        },
     ]
 }

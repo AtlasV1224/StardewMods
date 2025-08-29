@@ -86,5 +86,118 @@
                 "HasMod |contains=SoftPandaBoi.CPAlecRevisited": true,
             }
         },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": { "X": 66, "Y": 20 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 67, "Y": 19 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 67, "Y": 22 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 67, "Y": 23 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 66, "Y": 24 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 69, "Y": 29 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 86, "Y": 29 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 86, "Y": 28 },
+                    "Layer": "Front",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, 
+                "HasMod |contains=SoftPandaBoi.CPAlecRevisited": true,
+            }
+        },
+
+
+
+        // Stardew Valley Maps Retouched
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": { "X": 79, "Y": 19 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 80, "Y": 19 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 86, "Y": 21 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 87, "Y": 23 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 88, "Y": 25 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 89, "Y": 25 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 92, "Y": 26 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 93, "Y": 25 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 97, "Y": 26 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 100, "Y": 26 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod |contains=jenf1.mapsretouched": true, 
+            }
+        },
     ]
 }

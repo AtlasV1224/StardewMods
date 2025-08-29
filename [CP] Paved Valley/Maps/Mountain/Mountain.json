@@ -35,5 +35,47 @@
                 "HasMod": "FlashShifter.StardewValleyExpandedCP",
             }
         },
+
+
+        // Stardew Valley Maps Retouched
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "MapTiles": [
+                {
+                    "Position": { "X": 3, "Y": 25 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 3, "Y": 24 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 3, "Y": 22 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 9, "Y": 13 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 9, "Y": 11 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 10, "Y": 11 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod |contains=jenf1.mapsretouched": true, 
+            }
+        },
     ]
 }

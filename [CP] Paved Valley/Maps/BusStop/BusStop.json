@@ -84,5 +84,22 @@
                 "HasMod": "Kana.PrettierBusStop",
             }
         },
+
+
+        // Stardew Valley Maps Retouched
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "MapTiles": [
+                {
+                    "Position": { "X": 29, "Y": 12 },
+                    "Layer": "Paths",
+                    "Remove": true
+                },
+            ],
+            "When": {
+                "HasMod |contains=jenf1.mapsretouched": true, 
+            }
+        },
     ]
 }
