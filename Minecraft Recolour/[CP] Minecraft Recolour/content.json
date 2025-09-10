@@ -1,0 +1,12 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.7.0",
+  "Changes": [
+    {
+        "Action": "EditImage",
+        "Target": "Maps/spring_outdoorsTileSheet",
+        "FromFile": "Assets/Maps/spring_outdoorsTileSheet.png",
+        "PatchMode": "Overlay"
+    }
+  ]
+}

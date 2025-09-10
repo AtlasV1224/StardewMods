@@ -1,0 +1,37 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/{{AVLT_UniqueID}}/Icon",
+            "FromFile": "Assets/{{AVLT_ModName}}_icon.png",
+            "When": {
+                "HasMod": "{{AVLT_UniqueID}}"
+            }
+        },
+        {
+            "LogName": "Toolbar Icon for {{AVLT_ModName}} {{AVLT_Menu}}",
+            "Action": "EditData",
+            "Target": "furyx639.ToolbarIcons/Data",
+            "Entries": {
+                "{{ModId}}_{{AVLT_ModName}}.{{AVLT_Menu}}": {
+                    "ModId": "{{AVLT_UniqueID}}",
+                    "Type": "{{AVLT_InvokeType}}",
+                    "ExtraData": "{{AVLT_InvokeExtraData}}",
+                    "Title": "{{i18n: button.{{AVLT_ModName}}.{{AVLT_Menu}}.title}}",
+                    "HoverText": "{{i18n: button.{{AVLT_ModName}}.{{AVLT_Menu}}.description}}",
+                    "TexturePath": "{{ModId}}/{{AVLT_UniqueID}}/Icons",
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    }
+                }
+            },
+            "When": {
+                "HasMod": "{{AVLT_UniqueID}}"
+            }
+        }
+    ]
+}

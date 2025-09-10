@@ -1,0 +1,93 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Format": "2.7.0",
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors, LooseSprites/Cursors_1_6, LooseSprites/Cursors2, LooseSprites/daybg, LooseSprites/JunimoNote, LooseSprites/logo, Maps/MenuTiles, LooseSprites/nightbg, LooseSprites/PrizeTicketMenu, LooseSprites/tailoring, LooseSprites/textbox, Minigames/TitleButtons, Minigames/Xb1ProfileButton",
+			"PatchMode": "Overlay",
+			"FromFile": "Content/{{Target}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/BiggerBackpack/{{Target}}.png",
+			"When": {
+				"HasMod |contains= spacechase0.BiggerBackpack": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/gaussfire.ConvenientInventory/quickStackIcon, Mods/gaussfire.ConvenientInventory/autoOrganizeIcon",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/{{Target}}.png",
+			"When": {
+				"HasMod |contains= gaussfire.ConvenientInventory": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/shekurika.EventLookup/button, Mods/shekurika.EventLookup/statusCover",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/{{Target}}.png",
+			"When": {
+				"HasMod |contains= shekurika.EventLookup": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/Becks723.FontSettings/export, Mods/Becks723.FontSettings/font-button, Mods/Becks723.FontSettings/font-preview-compare, Mods/Becks723.FontSettings/font-preview-normal, Mods/Becks723.FontSettings/font-tab, Mods/Becks723.FontSettings/icon-for-toolbar-icons, Mods/Becks723.FontSettings/refresh, Mods/Becks723.FontSettings/save, Mods/Becks723.FontSettings/section-box, Mods/Becks723.FontSettings/spanner",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/{{Target}}.png",
+			"When": {
+				"HasMod |contains= Becks723.FontSettings": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/GenericModConfigMenu/ConfigButton, Mods/GenericModConfigMenu/KeyboardButton",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/{{Target}}.png",
+			"When": {
+				"HasMod |contains= spacechase0.GenericModConfigMenu": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/tlitookilakin.HappyHomeDesigner/UI, Mods/tlitookilakin.HappyHomeDesigner/Mail",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/{{Target}}.png",
+			"When": {
+				"HasMod |contains= tlitookilakin.HappyHomeDesigner": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "FlyingTNT.Swim/OxygenBar",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/{{Target}}.png",
+			"When": {
+				"HasMod |contains= FlyingTNT.Swim": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "UnlockableBundles/UI/BundleOverviewBG, UnlockableBundles/UI/AlternativeJunimoNote, UnlockableBundles/UI/BundleOverviewIcon, UnlockableBundles/UI/CookbookJunimoNote,UnlockableBundles/UI/MagicBookJunimoNote,UnlockableBundles/UI/MagicBookJunimoNote_Brown, UnlockableBundles/UI/MagicBookJunimoNote_Green, UnlockableBundles/UI/MagicBookJunimoNote_Red, UnlockableBundles/UI/MagicBookJunimoNote_Teal, UnlockableBundles/UI/MagicBookJunimoNote_Yellow",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/{{Target}}.png",
+			"When": {
+				"HasMod |contains= DLX.Bundles": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "VanillaPlusProfessions/TalentBG, VanillaPlusProfessions/TalentSchema, VanillaPlusProfessions/SkillBars",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/{{Target}}.png",
+			"When": {
+				"HasMod |contains= KediDili.VanillaPlusProfessions": true
+			}
+		}
+	]
+}

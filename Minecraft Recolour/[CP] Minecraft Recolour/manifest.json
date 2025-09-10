@@ -1,0 +1,19 @@
+{
+    "$schema": "https://smapi.io/schemas/manifest.json",
+    "Name": "Minecraft Recolour",
+    "Author": "AtlasV",
+    "Version":"0.0.1",
+    "Description": "Replaces tiles with minecraft blocks",
+    "UniqueID": "AtlasV.MCRecolour",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+    },
+    // "Dependencies": [
+    //     {
+    //         "UniqueID": "",
+    //         "MinimumVersion": "",
+    //         "IsRequired": true, //true or false
+    //     },
+    // ],
+}

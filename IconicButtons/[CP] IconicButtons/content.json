@@ -1,0 +1,42 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.8.0",
+  "Changes": [
+    {
+      "Action": "Include",
+      "FromFile": "data.json",
+      "LocalTokens": {
+        "AVLT_ModName": "",
+        "AVLT_UniqueModID": "",
+        "AVLT_InvokeType": "",
+        "AVLT_InvokeExtraData": "",
+        "AVLT_MenuName": "",
+      },
+    },
+  ]
+}
+
+
+
+
+
+
+// {
+// "Anything Anywhere": "Espy.AnythingAnywhere",
+// "Ars Venefici": "HeyImAmethyst.ArsVenefici",
+// "Automate": "Pathoschild.Automate",
+// "DailyMissions": "Nature.DailyMissions",
+// "Experience Bars": "spacechase0.ExperienceBars",
+// "Fishbot": "AdroSlice.Fishbot",
+// "Happy Home Designer": "tlitookilakin.HappyHomeDesigner",
+// "Line Sprinklers Redux": "rtrox.LineSprinklersRedux",
+// "Log Uploader": "aedenthorn.LogUploader",
+// "Magic Stardew": "Zexu2K.MagicStardew.C",
+// "Scaring / Thieving Skill": "moonslime.SpookySkill",
+// "SV Player Stats": "BeetleJuice20.SVPlayerStats",
+// "Swim Mod": "FlyingTNT.Swim",
+// "TimeSpeed": "cantorsdust.TimeSpeed",
+// "TrinketTinker": "mushymato.TrinketTinker",
+// "UI Info Suite 2": "Annosz.UiInfoSuite2",
+// "Zoom Level": "thespbgamer.ZoomLevel",
+// }

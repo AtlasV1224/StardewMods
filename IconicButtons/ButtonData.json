@@ -1,0 +1,24 @@
+{
+    "ButtonData": [
+        ["Anything Anywhere", "Espy.AnythingAnywhere",[]],
+        ["Ars Venefici", "HeyImAmethyst.ArsVenefici",["ArsVenefici.Framework.GUI.Menus",]],
+        ["Automate", "Pathoschild.Automate",[]],
+        ["DailyMissions", "Nature.DailyMissions",[]],
+        ["Experience Bars", "spacechase0.ExperienceBars",[]],
+        ["Fishbot", "AdroSlice.Fishbot",[]],
+        ["Happy Home Designer", "tlitookilakin.HappyHomeDesigner",[]],
+        ["Line Sprinklers Redux", "rtrox.LineSprinklersRedux",[]],
+        ["Log Uploader", "aedenthorn.LogUploader",[]],
+        ["Magic Stardew", "Zexu2K.MagicStardew.C",[]],
+        ["Scaring / Thieving Skill", "moonslime.SpookySkill",[]],
+        ["SV Player Stats", "BeetleJuice20.SVPlayerStats",[]],
+        ["Swim Mod", "FlyingTNT.Swim",[]],
+        ["TimeSpeed", "cantorsdust.TimeSpeed",[]],
+        ["TrinketTinker", "mushymato.TrinketTinker",[]],
+        ["UI Info Suite 2", "Annosz.UiInfoSuite2",[]],
+        ["Zoom Level", "thespbgamer.ZoomLevel",[]],
+    ]
+}
+
+
+

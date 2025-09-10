@@ -3,7 +3,7 @@
   "Author": "AtlasV",
   "Version": "1.0.0",
   "Description": "Adds modular furniture to Stardew Valley using Content Patcher.",
-  "UniqueID": "AtlasV.CPAtlasOfModularFurniture",
+  "UniqueID": "AtlasV.ModularFurniture",
   "UpdateKeys": ["Nexus:???"],
   "Dependencies": [
       {
