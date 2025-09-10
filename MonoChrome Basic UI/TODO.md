@@ -77,19 +77,16 @@
 #### Lookup anything
 - Uses vanilla assets
 
+---
+#### Info to find correct Target Path
 
-
-
-
-
-
-
-
-
-
-Search for helper.Events.Content.AssetRequested in mod files to find if assets are loaded via content pipeline
+<details>
+<summary>Info</summary>
+Search for `helper.Events.Content.AssetRequested` in mod files to find if assets are loaded via content pipeline
 Search for the bit following the previous to find the asset path
+<br>
+Or search for `.content.Load<Texture2D>`
+<br>
+Or `LoadFromModFile<Texture2D>` if combined with `if NameWithoutLocale.IsEquivalentTo`
+</details>
 
-Or search for .content.Load<Texture2D>
-
-LoadFromModFile<Texture2D> if combined with if NameWithoutLocale.IsEquivalentTo
