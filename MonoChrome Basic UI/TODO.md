@@ -1,72 +1,81 @@
-UI Content Support list
-### Vanilla
+# UI Content Support list
+## Vanilla
 - Vanilla Text Box
 - Vanilla screenshot button
 - Vanilla calender
 - Vanilla daily quests
 - Vanilla letters
 
-### Mods
-- Convenient Inventory
-    - Mods/gaussfire.ConvenientInventory/quickStackIcon
-    - Mods/gaussfire.ConvenientInventory/favoriteCursor
-    - Mods/gaussfire.ConvenientInventory/favoriteHighlight_0 (through to 6)
-    - Mods/gaussfire.ConvenientInventory/favoriteBorder
-    - Mods/gaussfire.ConvenientInventory/autoOrganizeIcon
-- Font settings 
-    - Mods/Becks723.FontSettings/font-tab
-    - Mods/Becks723.FontSettings/refresh
-    - Mods/Becks723.FontSettings/save
-    - Mods/Becks723.FontSettings/delete
-    - Mods/Becks723.FontSettings/font-preview-normal
-    - Mods/Becks723.FontSettings/font-preview-compare
-    - Mods/Becks723.FontSettings/section-box
-    - Mods/Becks723.FontSettings/font-button
-    - Mods/Becks723.FontSettings/export
-    - Mods/Becks723.FontSettings/spanner
-- Happy Home Designer
-	- Mods/tlitookilakin.HappyHomeDesigner/Catalogue
-	- Mods/tlitookilakin.HappyHomeDesigner/UI
-	- Mods/tlitookilakin.HappyHomeDesigner/Mail
-	- Mods/tlitookilakin.HappyHomeDesigner/Overlay
-- Swim Mod
-    - FlyingTNT.Swim/MappedPants
-    - FlyingTNT.Swim/OxygenBar
-    - Theres more, all fishes but theres so many
-- Vanilla Plus Professions
-    - VanillaPlusProfessions/ProfessionIcons
-    - VanillaPlusProfessions/TalentBG
-    - VanillaPlusProfessions/TalentSchema
-    - VanillaPlusProfessions/BundleIcons
-    - VanillaPlusProfessions/SkillBars
-- Smart building
-    - Mods/SmartBuilding/ToolButtons        (assets/Buttons.png)
-- Bigger Backpack
-    - [x] Junimo note 
+## Mods
+### Supported Via Content Pipeline
+#### Bigger Backpack
+- LooseSprites/JunimoNote 
+#### Convenient Inventory
+- Mods/gaussfire.ConvenientInventory/quickStackIcon
+- Mods/gaussfire.ConvenientInventory/favoriteCursor
+- Mods/gaussfire.ConvenientInventory/favoriteHighlight_0 (through to 6)
+- Mods/gaussfire.ConvenientInventory/favoriteBorder
+- Mods/gaussfire.ConvenientInventory/autoOrganizeIcon
+#### Font settings 
+- Mods/Becks723.FontSettings/font-tab
+- Mods/Becks723.FontSettings/refresh
+- Mods/Becks723.FontSettings/save
+- Mods/Becks723.FontSettings/delete
+- Mods/Becks723.FontSettings/font-preview-normal
+- Mods/Becks723.FontSettings/font-preview-compare
+- Mods/Becks723.FontSettings/section-box
+- Mods/Becks723.FontSettings/font-button
+- Mods/Becks723.FontSettings/export
+- Mods/Becks723.FontSettings/spanner
+#### Happy Home Designer
+- Mods/tlitookilakin.HappyHomeDesigner/Catalogue
+- Mods/tlitookilakin.HappyHomeDesigner/UI
+- Mods/tlitookilakin.HappyHomeDesigner/Mail
+- Mods/tlitookilakin.HappyHomeDesigner/Overlay
+#### Smart building
+- Mods/SmartBuilding/ToolButtons        (assets/Buttons.png)
+#### Swim Mod
+- FlyingTNT.Swim/MappedPants
+- FlyingTNT.Swim/OxygenBar
+- Theres more, all fishes but theres so many
+#### Vanilla Plus Professions
+- VanillaPlusProfessions/ProfessionIcons
+- VanillaPlusProfessions/TalentBG
+- VanillaPlusProfessions/TalentSchema
+- VanillaPlusProfessions/BundleIcons
+- VanillaPlusProfessions/SkillBars
 
-- Deluxe journal
-    - Skips pipeline
-- Mana Bar
-    - Skips pipeline
-- Quality Colour Smash
-    - Skips pipeline
-- SpecialPower Utilities
-    - Skips pipeline
+---
+### Skips Content Pipeline
+#### Deluxe journal
+- Skips pipeline
+#### Mana Bar
+- Skips pipeline
+#### Quality Colour Smash
+- Skips pipeline
+#### SpecialPower Utilities
+- Skips pipeline
 
-- Event lookup
-    - No Source (ILSpy)
-- Stardew and Chill
-    - No Source (ILSpy)
-- Mod Update Menu               https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/page-243#post-148313
-    - No Source (ILSpy)
+---
+### No Source Found
+#### Event lookup
+- No Source (ILSpy)
+#### Stardew and Chill
+- No Source (ILSpy)
+#### Mod Update Menu [Forum Link](https://forums.stardewvalley.net/threads/unofficial-mod-updates.2096/page-243#post-148313)
+- No Source (ILSpy)
 
-- Unlockable Bundles
-    - Can't find due to GitLab bulshittery
+---
+### Other Temporary Reasons
+#### Unlockable Bundles
+- Can't find due to GitLab bulshittery
 
-- Generic Mod Config Menu
-    - Uses vanilla assets
-- Lookup anything
-    - Uses vanilla assets
+---
+### Uses Vanilla Assets
+#### Generic Mod Config Menu
+- Uses vanilla assets
+#### Lookup anything
+- Uses vanilla assets
 
 
 
