@@ -1,0 +1,13 @@
+{
+    "$schema": "https://smapi.io/schemas/manifest.json",
+    "Name": "Slot Limiter",
+    "Author": "AtlasV",
+    "Version":"1.0.0",
+    "Description": "Adds an item that has no use, except for blocking off slots in a chest",
+    "UniqueID": "AtlasV.SlotLimiter",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.8.0",
+    },
+}

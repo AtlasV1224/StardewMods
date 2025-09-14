@@ -1,0 +1,22 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.8.0",
+  "Changes": [
+    {
+      // Add Object
+      "LogName": "Load Slot Limiter",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "AtlasV.SlotLimiter": {
+          "Name": "SlotLimiter",
+          "DisplayName": "Slot Limiter",
+          "Description": "An item that has no use except for prevent slots in chests from being used",
+          "Texture": "LooseSprites/Cursors",
+          "SpriteIndex": 543,
+          "Category": -22 
+        }
+      }
+    }
+  ]
+}

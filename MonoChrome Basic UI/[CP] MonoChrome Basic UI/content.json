@@ -19,7 +19,7 @@
 		},
 		{
 			"Action": "EditImage",
-			"Target": "Mods/gaussfire.ConvenientInventory/quickStackIcon, Mods/gaussfire.ConvenientInventory/autoOrganizeIcon",
+			"Target": "Mods/gaussfire.ConvenientInventory/quickStackIcon, Mods/gaussfire.ConvenientInventory/autoOrganizeIcon, Mods/gaussfire.ConvenientInventory/favoriteCursor, Mods/gaussfire.ConvenientInventory/favoriteBorder, Mods/gaussfire.ConvenientInventory/favoriteHighlight_0, Mods/gaussfire.ConvenientInventory/favoriteHighlight_1, Mods/gaussfire.ConvenientInventory/favoriteHighlight_2, Mods/gaussfire.ConvenientInventory/favoriteHighlight_3, Mods/gaussfire.ConvenientInventory/favoriteHighlight_4, Mods/gaussfire.ConvenientInventory/favoriteHighlight_5, Mods/gaussfire.ConvenientInventory/favoriteHighlight_6",
 			"PatchMode": "Overlay",
 			"FromFile": "Compat/{{Target}}.png",
 			"When": {
@@ -82,11 +82,20 @@
 		},
 		{
 			"Action": "EditImage",
-			"Target": "VanillaPlusProfessions/TalentBG, VanillaPlusProfessions/TalentSchema, VanillaPlusProfessions/SkillBars",
+			"Target": "VanillaPlusProfessions/TalentBG, VanillaPlusProfessions/TalentSchema, VanillaPlusProfessions/SkillBars, VanillaPlusProfessions/ProfessionIcons, VanillaPlusProfessions/BundleIcons",
 			"PatchMode": "Overlay",
 			"FromFile": "Compat/{{Target}}.png",
 			"When": {
 				"HasMod |contains= KediDili.VanillaPlusProfessions": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/SmartBuilding/ToolButtons",
+			"PatchMode": "Overlay",
+			"FromFile": "Compat/Mods/SmartBuilding/Buttons.png",
+			"When": {
+				"HasMod |contains= DecidedlyHuman.SmartBuilding": true
 			}
 		}
 	]

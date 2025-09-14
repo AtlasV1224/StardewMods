@@ -1,0 +1,21 @@
+{
+    "$schema": "https://smapi.io/schemas/manifest.json",
+    "Name": "[FS] Atlas' Styles",
+    "Author": "AtlasV",
+    "Version": "1.0.0",
+    "Description": "Adds a few clothes that I personally want",
+    "UniqueID": "AtlasV.AtlasStyles",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "PeacefulEnd.FashionSense",
+        "MinimumVersion": "7.0.2"
+    }
+    // "Dependencies": [
+    //     {
+    //         "UniqueID": "",
+    //         "MinimumVersion": "",
+    //         "IsRequired": true, //true or false
+    //     },
+    // ],
+}
+

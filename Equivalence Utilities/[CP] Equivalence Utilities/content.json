@@ -1,0 +1,53 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.8.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModID}}_Radioactive_to_Iridium": "910 1/AtlasVRecipe/337 2/false/Mining 10/",
+        "{{ModID}}_Iridium_to_Gold": "337 1/AtlasVRecipe/336 2/false/Mining 7/",
+        "{{ModID}}_Gold_to_Iron": "336 1/AtlasVRecipe/335 2/false/Mining 5/",
+        "{{ModID}}_Iron_to_Copper": "335 1/AtlasVRecipe/334 2/false/Mining 3/",
+
+
+        "{{ModID}}_chest_to_BigChest": "(BC)130 1 388 70 334 2/AtlasVRecipe/(BC)BigChest 1/true/default/",
+
+
+        "{{ModID}}_Dwarf_scroll_I": "122 1 428 1 814 1/AtlasVRecipe/96/false/default/",
+        "{{ModID}}_Dwarf_scroll_II": "122 1 428 1 814 1/AtlasVRecipe/97/false/default/",
+        "{{ModID}}_Dwarf_scroll_III": "122 1 428 1 814 1/AtlasVRecipe/98/false/default/",
+        "{{ModID}}_Dwarf_scroll_IV": "122 1 428 1 814 1/AtlasVRecipe/99/false/default/",
+
+
+        "{{ModID}}_Wood_to_SlotLimiter": "388 1/AtlasVRecipe/AtlasV.EUSlotLimiter/false/default/",
+        "{{ModID}}_SlotLimiter_to_Wood": "AtlasV.EUSlotLimiter/AtlasVRecipe/388 1/false/default/",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "{{ModID}}_Qi_Seasoning": "74 1 910 2 245 2/AtlasVRecipe/917 5/default/",
+        "{{ModID}}_Magic_Rock_Candy": "917 4 64 1 562 1 68 1 60 1 62 1 66 1 74 1/AtlasVRecipe/279 2/default/",
+      }
+    },
+    {
+      // Add Object
+      "LogName": "Load Slot Limiter",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "AtlasV.EUSlotLimiter": {
+          "Name": "SlotLimiter",
+          "DisplayName": "Slot Limiter",
+          "Description": "An item that has no use except for prevent slots in chests from being used",
+          "Texture": "LooseSprites/Cursors",
+          "SpriteIndex": 543,
+          "Category": -22 
+        }
+      }
+    }
+  ]
+}

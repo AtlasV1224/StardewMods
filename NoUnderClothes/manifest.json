@@ -1,0 +1,11 @@
+﻿{
+	"$schema": "https://smapi.io/schemas/manifest.json",
+	"Name": "TestingForSCOMP",
+	"Author": "AtlasV",
+	"Version": "1.0.0",
+	"Description": "Test pack for asset forwarding via mushymato.SCOMP",
+	"UniqueID": "AtlasV.AssFor",
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+}

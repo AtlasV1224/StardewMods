@@ -1,0 +1,20 @@
+{
+    "$schema": "https://smapi.io/schemas/manifest.json",
+    "Name": "EqualUtils",
+    "Author": "AtlasV",
+    "Version":"1.0.0",
+    "Description": "",
+    "UniqueID": "AtlasV.EqualUtils",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.8.0",
+    },
+    // "Dependencies": [
+    //     {
+    //         "UniqueID": "",
+    //         "MinimumVersion": "",
+    //         "IsRequired": true, //true or false
+    //     },
+    // ],
+}
