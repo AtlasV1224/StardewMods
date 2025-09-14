@@ -9,7 +9,7 @@
     "ContentPackFor": {
         "UniqueID": "PeacefulEnd.FashionSense",
         "MinimumVersion": "7.0.2"
-    }
+    },
     // "Dependencies": [
     //     {
     //         "UniqueID": "",
@@ -17,5 +17,13 @@
     //         "IsRequired": true, //true or false
     //     },
     // ],
+    "AtlasV_Metadata": {
+        "Status": "Unfinished",
+        "Reason": "",
+        "Priority": "1", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+        "Aim": "I wanted more male fitting clothes",
+        "ToDo": [
+            "Make the clothes",
+        ]
+    }
 }
-

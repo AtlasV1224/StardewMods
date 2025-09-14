@@ -5,7 +5,9 @@
   "Description": "",
   "UniqueID": "AtlasV.AncientBundle",
   "MinimumApiVersion": "4.2.0",
-  "UpdateKeys": ["Nexus:???"],
+  "UpdateKeys": [
+    "Nexus:???"
+  ],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
@@ -14,5 +16,14 @@
       "UniqueID": "spacechase0.SpaceCore",
       "IsRequired": true
     }
-  ]
+  ],
+  "AtlasV_Metadata": {
+    "Status": "Unreleased",
+    "Reason": "",
+    "Priority": "1", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+    "Aim": "To have a truly Universal love that is hard to craft",
+    "ToDo": [
+      "Nothing yet",
+    ]
+  }
 }

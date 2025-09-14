@@ -5,7 +5,9 @@
   "Description": "A mod that paves the valley like a functional town should be",
   "UniqueID": "AtlasV.PavedValley",
   "MinimumApiVersion": "4.2.0",
-  "UpdateKeys": ["Nexus:36297"],
+  "UpdateKeys": [
+    "Nexus:36297"
+  ],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
@@ -30,5 +32,18 @@
       "UniqueID": "N3cro_92.AlternativBusStop",
       "IsRequired": false
     },
-  ]
+  ],
+  "AtlasV_Metadata": {
+    "Status": "Stable",
+    "Reason": "",
+    "Priority": "3", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+    "Aim": "Pave various areas of the valley to make it look nicer",
+    "ToDo": [
+      "Compat for Valley Upgrades (Needs MAJOR revisions to areas and will take time)",
+      "Support Soft Slow Seasons (XModTokens needed)",
+      "Support Pinkstations Cotton Recolor (XModTokens needed)",
+      "Support Stardew Foliage Redone (Not Available and no unofficial)",
+      "Support Vibrant Pastoral Redone (Can't find the right tiles to colour match)"
+    ]
+  }
 }

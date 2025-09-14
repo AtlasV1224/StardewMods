@@ -8,5 +8,14 @@
   "UpdateKeys": ["Nexus:???"],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "AtlasV_Metadata": {
+    "Status": "Abandoned",
+    "Reason": "Impractical without C# as the content.json is over 3k lines long",
+    "Priority": "0", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+    "Aim": "A universal food item for lazy people (me)",
+    "ToDo": [
+      "",
+    ]
   }
 }

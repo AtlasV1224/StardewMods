@@ -8,8 +8,8 @@
     "UpdateKeys": [],
     "Dependencies": [
         {
-        "UniqueID": "AtlasV.AutoSorterBuilding",
-        "IsRequired": true
+            "UniqueID": "AtlasV.AutoSorterBuilding",
+            "IsRequired": true
         }
-    ]
+    ],
 }

@@ -8,4 +8,13 @@
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher"
 	},
+    "AtlasV_Metadata": {
+        "Status": "Unreleased",
+        "Reason": "",
+        "Priority": "1", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+        "Aim": "Some Fashsion Sense packs with sleavless tops show the vanilla top underneith, this changes it so that the basic farmer sprite doesnt have sleaves",
+        "ToDo": [
+            "Add more skin colours changable by config",
+        ]
+    }
 }

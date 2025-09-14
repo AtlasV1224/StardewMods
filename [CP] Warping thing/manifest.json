@@ -14,5 +14,15 @@
       "UniqueID": "Spiderbuttons.ArbitraryTilesheetAccess",
       "IsRequired": false
     },
-  ]
+  ],
+  "AtlasV_Metadata": {
+    "Status": "Unreleased",
+    "Reason": "",
+    "Priority": "1", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+    "Aim": "Wanted a warp hall with modded support",
+    "ToDo": [
+      "Add modded support",
+      "Actually make it look prettier",
+    ]
+  }
 }

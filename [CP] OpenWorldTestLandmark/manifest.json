@@ -14,5 +14,16 @@
       "UniqueID": "aedenthorn.StardewOpenWorld",
       "IsRequired": true
     }
-  ]
+  ],
+  "AtlasV_Metadata": {
+    "Status": "Unfinished",
+    "Reason": "C# would make it easier and more dynamic but idk C# yet",
+    "Priority": "1", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+    "Aim": "Testing the capabilities of the Open World mod, and to see if making the entire game open world is feasabe",
+    "ToDo": [
+      "Finish inter connects",
+      "Add warps to maps",
+      "Add more sub maps and secrets (C# would make secrets easier)"
+    ]
+  }
 }

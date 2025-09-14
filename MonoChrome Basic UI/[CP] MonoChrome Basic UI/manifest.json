@@ -17,4 +17,13 @@
     //         "IsRequired": true, //true or false
     //     },
     // ],
+    "AtlasV_Metadata": {
+        "Status": "Unreleased",
+        "Reason": "",
+        "Priority": "2", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+        "Aim": "UI too bright, wanted a darker one that was basic",
+        "ToDo": [
+            "Add more mod support and some vanilla sprites are missing",
+        ]
+    }
 }

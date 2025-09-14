@@ -5,7 +5,9 @@
   "Description": "A mod that adds paths",
   "UniqueID": "AtlasV.AtlasOfPaths",
   "MinimumApiVersion": "4.2.0",
-  "UpdateKeys": ["Nexus:35598"],
+  "UpdateKeys": [
+    "Nexus:35598"
+  ],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
@@ -14,5 +16,17 @@
       "UniqueID": "AtlasV.AtlasCatalogue",
       "IsRequired": false
     }
-  ]
+  ],
+  "AtlasV_Metadata": {
+    "Status": "Unfinished",
+    "Reason": "",
+    "Priority": "2", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+    "Aim": "Many Many more paths, with patterns in different themes, each theme with up, down, left, and right stairs",
+    "ToDo": [
+      "Add grass paths from {{AtlasV.AtlasGrassPaths}}",
+      "Add stairs for all directions",
+      "Add more colour themes and patterns",
+      "Possibly add diagonal paths, probably using MMAP connected textures",
+    ]
+  }
 }

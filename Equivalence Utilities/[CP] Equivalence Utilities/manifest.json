@@ -17,4 +17,14 @@
     //         "IsRequired": true, //true or false
     //     },
     // ],
+    "AtlasV_Metadata": {
+        "Status": "Unreleased",
+        "Reason": "",
+        "Priority": "1", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+        "Aim": "Felt like a lot of utility recipes were missing and wanted a configurable solution",
+        "ToDo": [
+            "Add more recipes",
+            "Add support for translations"
+        ]
+    }
 }

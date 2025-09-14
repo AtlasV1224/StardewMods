@@ -17,5 +17,15 @@
   ],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "AtlasV_Metadata": {
+    "Status": "Unfinished",
+    "Reason": "",
+    "Priority": "2", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+    "Aim": "I wanted modular furniture that was able to make things like large tables and conversation pits",
+    "ToDo": [
+      "Fix table sprites",
+      "Make couch textures"
+    ]
   }
 }

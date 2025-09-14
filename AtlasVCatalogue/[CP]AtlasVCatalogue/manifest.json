@@ -4,7 +4,9 @@
     "Version": "1.0.1",
     "Description": "Adds a new catalogue for my collection of decor mods.",
     "UniqueID": "AtlasV.AtlasCatalogue",
-    "UpdateKeys": ["Nexus:35658"],
+    "UpdateKeys": [
+        "Nexus:35658"
+    ],
     "Dependencies": [
         {
             "UniqueID": "sophie.Calcifer",
@@ -13,5 +15,14 @@
     ],
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "AtlasV_Metadata": {
+        "Status": "Released",
+        "Reason": "",
+        "Priority": "1", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+        "Aim": "Just a catalogue for the furniture mods I have planned to release",
+        "ToDo": [
+            "Change AT pack to config option as multimods make more PICNIC reports",
+        ]
     }
 }
