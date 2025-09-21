@@ -1,0 +1,12 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.8.0",
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/spouseRooms",
+      "FromFile": "Assets/spouseRooms.tmx",
+      "PatchMode": "Overlay"
+    },
+  ]
+}

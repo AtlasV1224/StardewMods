@@ -1,0 +1,24 @@
+{
+  "Name": "[CP] Decoratable Spouse rooms",
+  "Author": "AtlasV",
+  "Version": "1.0.0",
+  "Description": "A mod that allows spouse rooms to be decorated",
+  "UniqueID": "AtlasV.DecoratableSpouseRooms",
+  "MinimumApiVersion": "4.2.0",
+  "UpdateKeys": [
+    "Nexus:???"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+  ],
+  "AtlasV_Metadata": {
+    "Status": "Unreleased",
+    "Reason": "testing",
+    "Priority": "2", // 0=Abandoned, 1=Low, 2=Medium, 3=High, 4=Priority
+    "Aim": "Decoratable Spouse Rooms",
+    "ToDo": [
+    ]
+  }
+}
